@@ -1,0 +1,1729 @@
+<!DOCTYPE html><html class="dark" lang="ko"><head>
+<meta charset="utf-8">
+<meta content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, viewport-fit=cover" name="viewport">
+<meta content="mobile_tab" name="shell-type">
+<meta name="theme-color" content="#121413">
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+<title>SANCTUARY — 은혜의 성소</title>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" rel="stylesheet">
+<link href="https://fonts.googleapis.com" rel="preconnect">
+<link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect">
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&amp;display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet">
+<script src="https://cdn.tailwindcss.com"></script>
+<script id="tailwind-config">
+    tailwind.config = {
+      darkMode: "class",
+      theme: {
+        extend: {
+          "colors": {
+            "secondary": "#b9c8de",
+            "on-surface": "#e2e3e0",
+            "surface": "#121413",
+            "on-tertiary-fixed": "#311300",
+            "secondary-fixed-dim": "#b9c8de",
+            "on-primary": "#003825",
+            "primary-container": "#34d399",
+            "secondary-fixed": "#d4e4fa",
+            "on-error-container": "#ffdad6",
+            "surface-container-lowest": "#0d0f0e",
+            "primary": "#5af0b3",
+            "on-error": "#690005",
+            "on-primary-container": "#00563b",
+            "on-secondary-fixed-variant": "#39485a",
+            "on-tertiary-fixed-variant": "#723600",
+            "tertiary-fixed-dim": "#ffb787",
+            "on-secondary-fixed": "#0d1c2d",
+            "surface-container-high": "#282a29",
+            "outline-variant": "#3c4a42",
+            "inverse-on-surface": "#2f3130",
+            "error-container": "#93000a",
+            "inverse-primary": "#006c4b",
+            "surface-bright": "#383a38",
+            "primary-fixed-dim": "#45dfa4",
+            "on-surface-variant": "#bbcac0",
+            "on-tertiary": "#502400",
+            "primary-fixed": "#68fcbf",
+            "on-background": "#e2e3e0",
+            "on-secondary": "#233143",
+            "on-primary-fixed-variant": "#005137",
+            "tertiary": "#ffccad",
+            "tertiary-container": "#ffa668",
+            "surface-variant": "#333534",
+            "secondary-container": "#39485a",
+            "inverse-surface": "#e2e3e0",
+            "surface-container": "#1e201f",
+            "background": "#121413",
+            "outline": "#85948b",
+            "on-primary-fixed": "#002114",
+            "surface-tint": "#45dfa4",
+            "surface-container-highest": "#333534",
+            "on-secondary-container": "#a7b6cc",
+            "on-tertiary-container": "#783901",
+            "error": "#ffb4ab",
+            "surface-container-low": "#1a1c1b",
+            "tertiary-fixed": "#ffdcc7",
+            "surface-dim": "#121413"
+          },
+          "borderRadius": {
+            "DEFAULT": "0.25rem",
+            "lg": "0.5rem",
+            "xl": "0.75rem",
+            "full": "9999px"
+          },
+          "spacing": {
+            "gutter-tablet": "1.5rem",
+            "space-md": "1rem",
+            "gutter": "1rem",
+            "space-xl": "2.5rem",
+            "space-sm": "0.5rem",
+            "space-xs": "0.25rem",
+            "margin-tablet": "2rem",
+            "margin": "1.25rem",
+            "space-lg": "1.5rem",
+            "gutter-desktop": "2rem",
+            "margin-desktop": "3rem"
+          },
+          "fontFamily": {
+            "body-md": ["Inter"],
+            "display-lg": ["Inter"],
+            "body-lg": ["Inter"],
+            "headline-lg": ["Inter"],
+            "label-md": ["Inter"],
+            "display-lg-mobile": ["Inter"],
+            "label-lg": ["Inter"],
+            "label-sm": ["Inter"],
+            "headline-md": ["Inter"],
+            "body-sm": ["Inter"],
+            "headline-lg-mobile": ["Inter"]
+          },
+          "fontSize": {
+            "body-md": ["15px", { "lineHeight": "22px", "letterSpacing": "0em", "fontWeight": "400" }],
+            "display-lg": ["56px", { "lineHeight": "64px", "letterSpacing": "-0.03em", "fontWeight": "300" }],
+            "body-lg": ["17px", { "lineHeight": "26px", "letterSpacing": "-0.005em", "fontWeight": "400" }],
+            "headline-lg": ["32px", { "lineHeight": "40px", "letterSpacing": "-0.02em", "fontWeight": "400" }],
+            "label-md": ["12px", { "lineHeight": "16px", "letterSpacing": "0.04em", "fontWeight": "500" }],
+            "display-lg-mobile": ["40px", { "lineHeight": "48px", "letterSpacing": "-0.025em", "fontWeight": "300" }],
+            "label-lg": ["14px", { "lineHeight": "20px", "letterSpacing": "0.02em", "fontWeight": "500" }],
+            "label-sm": ["11px", { "lineHeight": "14px", "letterSpacing": "0.06em", "fontWeight": "600" }],
+            "headline-md": ["22px", { "lineHeight": "30px", "letterSpacing": "-0.01em", "fontWeight": "500" }],
+            "body-sm": ["13px", { "lineHeight": "18px", "letterSpacing": "0.01em", "fontWeight": "400" }],
+            "headline-lg-mobile": ["26px", { "lineHeight": "34px", "letterSpacing": "-0.015em", "fontWeight": "400" }]
+          }
+        }
+      }
+    };
+  </script>
+<style>
+    @layer base {
+      html, body {
+        width: 100vw;
+        margin: 0;
+        padding: 0;
+        min-height: 100vh;
+        background-color: #121413;
+        color: #e2e3e0;
+      }
+      body {
+        overscroll-behavior-y: none;
+        -webkit-tap-highlight-color: transparent;
+      }
+      .pb-safe { padding-bottom: env(safe-area-inset-bottom, 0px); }
+      .pt-safe { padding-top: env(safe-area-inset-top, 0px); }
+      main > :first-child { margin-top: 0 !important; }
+      main > :last-child { margin-bottom: 0 !important; }
+    }
+    ::-webkit-scrollbar { display: none; }
+    body { min-height: max(884px, 100dvh); }
+    .keep-all { word-break: keep-all; overflow-wrap: break-word; }
+  </style>
+</head>
+<body class="bg-[#121413] text-[#e2e3e0] antialiased flex flex-col min-h-screen relative overflow-x-hidden">
+<!-- Header identical to SCREEN_31 & SCREEN_7 -->
+<header class="fixed top-0 inset-x-0 z-50 pt-safe bg-[#121413]/85 backdrop-blur-xl shadow-[0_1px_8px_rgba(0,0,0,0.04)]">
+<div class="h-16 px-margin flex items-center justify-between">
+<div class="flex flex-col justify-center select-none">
+<div class="flex items-center gap-1.5 leading-none">
+<span class="font-bold text-[16px] tracking-wider text-[#f1f5f2] uppercase font-display-lg-mobile">SANCTUARY</span>
+<span class="w-1.5 h-1.5 rounded-full bg-primary inline-block animate-pulse"></span>
+</div>
+<span class="text-[11px] text-[#85948b] font-normal tracking-tight mt-0.5">은혜의 성소</span>
+</div>
+<div class="flex items-center gap-3"><a class="inline-flex items-center gap-1.5 px-3 py-1 rounded-full border border-outline-variant/40 hover:bg-surface-container text-primary text-xs font-semibold whitespace-nowrap shrink-0 transition-all active:scale-95 shadow-sm bg-[#121413] cursor-pointer" data-path="sanctuary-profile" onclick="openProfileView()" role="button" title="칭호: 동행자"><svg class="w-3.5 h-3.5 text-primary shrink-0" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.75" viewBox="0 0 24 24"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"></polygon></svg><span class="leading-none text-primary" id="header-title-badge-label">동행자</span></a><button aria-label="프로필 및 닉네임 설정" class="flex items-center justify-center rounded-full transition-opacity hover:opacity-80 active:scale-95 shrink-0 cursor-pointer" onclick="openProfileView()" type="button" id="header-avatar-btn"><div class="w-9 h-9 rounded-full overflow-hidden border border-outline-variant/30 flex items-center justify-center bg-surface-container-high shadow-sm"><img alt="프로필" class="w-full h-full object-cover" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDWAo2TWP6elMRrIALeKvZRF2HkCeRvXoN3kXmY836cbKzOG1yVc6jG9IrFZZks4iL4m66GCcq9rJd97hTXrdtaD2KOUnDSqpP1om8b-K_UtVqr--Odhigs54uKsBRTzSH_byo47o56xZvQrNCzgTWsF-3a3q_XxPtNhI8vl7YRsO8czgSGUo71cfhTZnNCFpIXKUAIPNJqvyJ4dPPgClQdrEUo5_JyPj3drRzVjTJt"></div></button></div>
+</div>
+</header>
+<main class="flex-1 flex flex-col relative w-full pt-16 pb-24 bg-[#121413] px-margin">
+<div class="flex flex-col w-full select-none keep-all">
+<!-- ============================================== -->
+<!-- TAB 1: 요약 (Summary View matching SCREEN_31) -->
+<!-- ============================================== -->
+<section class="tab-pane flex flex-col w-full space-y-space-xl transition-all duration-300 opacity-100" id="tab-view-summary">
+<!-- 1. Date & Editorial Invocation -->
+<header class="flex flex-col pt-space-xs">
+<div class="flex items-center justify-between">
+<span class="font-label-sm text-label-sm tracking-wider uppercase text-[#a7b8ae]">10월 12일 토요일</span>
+<span class="inline-flex items-center gap-1.5 px-space-sm py-0.5 rounded-full bg-surface-container text-[#c2d0c7] font-label-sm text-label-sm border border-outline-variant/30 whitespace-nowrap shrink-0">
+<span class="w-1.5 h-1.5 rounded-full bg-primary-container animate-pulse shrink-0"></span>동행 30일차
+            </span>
+</div>
+<div class="mt-space-sm flex flex-col gap-1">
+<div class="flex items-center gap-1.5">
+<span class="text-[#34d399] font-bold font-body-lg text-body-lg">은혜 님</span>
+<span class="text-[#a7b8ae] font-label-sm text-label-sm">오늘도 주님 안에서</span>
+</div>
+<h1 class="font-headline-lg-mobile text-headline-lg-mobile tracking-tight font-medium text-[#f1f5f2] leading-snug">
+              흔들림 없는 믿음으로<br>지켜낸 30일의 승리
+            </h1>
+</div>
+</header>
+<!-- 2. Core Purity Telemetry Card -->
+<section class="bg-surface-container-low rounded-xl p-space-lg relative overflow-hidden">
+<div class="absolute -right-16 -top-16 w-56 h-56 rounded-full bg-primary-container/10 blur-3xl pointer-events-none"></div>
+<div class="flex items-start justify-between relative z-10">
+<div class="flex flex-col">
+<span class="font-label-md text-label-md text-primary tracking-widest font-semibold uppercase">Purity Continuous</span>
+<span class="font-body-sm text-body-sm text-on-surface-variant mt-0.5">은혜로 지켜낸 거룩한 절제</span>
+</div>
+<button aria-label="기록 관리" onclick="openProfileView()" class="flex items-center gap-1 px-space-sm py-1 rounded-lg bg-surface-container hover:bg-surface-container-high text-on-surface-variant hover:text-on-surface transition-all active:scale-95 cursor-pointer" type="button">
+<span class="font-label-sm text-label-sm">관리</span>
+<svg class="w-3.5 h-3.5 text-on-surface-variant" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.75" viewBox="0 0 24 24">
+<line x1="4" x2="20" y1="6" y2="6"></line>
+<line x1="4" x2="20" y1="12" y2="12"></line>
+<line x1="4" x2="20" y1="18" y2="18"></line>
+<circle cx="9" cy="6" fill="currentColor" r="2"></circle>
+<circle cx="15" cy="12" fill="currentColor" r="2"></circle>
+<circle cx="8" cy="18" fill="currentColor" r="2"></circle>
+</svg>
+</button>
+</div>
+<!-- Monumental Digits -->
+<div class="mt-space-lg flex items-baseline gap-2 relative z-10">
+<span class="font-display-lg text-display-lg font-light text-white tracking-tighter">30</span>
+<span class="font-headline-md text-headline-md text-primary font-medium">일째 승리</span>
+</div>
+<p class="font-body-sm text-body-sm text-on-surface-variant mt-1 relative z-10 text-[#d1d5db]">
+            누적 <span class="text-on-surface font-medium">720시간</span> 무결점 상태를 유지하고 있습니다
+          </p>
+<!-- Goal Trajectory Gauge -->
+<div class="mt-space-lg pt-space-md bg-surface-container-lowest/50 -mx-space-lg -mb-space-lg px-space-lg pb-space-lg rounded-b-xl relative z-10">
+<div class="flex items-center justify-between text-on-surface-variant font-label-sm text-label-sm mb-2">
+<span class="text-on-surface">1차 목표 90일</span>
+<span class="text-primary font-medium">30일 완료 (33.3%)</span>
+</div>
+<div class="w-full h-1.5 rounded-full bg-surface-container-highest overflow-hidden">
+<div class="h-full bg-primary rounded-full transition-all duration-700 ease-out" style="width: 33.3%;"></div>
+</div>
+<div class="flex justify-between items-center mt-2 font-label-sm text-label-sm text-[#bbcac0]">
+<span>시작일: 9월 13일</span>
+<span>목표일: 12월 11일</span>
+</div>
+</div>
+</section>
+<!-- 3. Immediate Spiritual Intervention (Sanctuary Guard) -->
+<section>
+<a class="group block p-space-md rounded-xl bg-surface-container-low transition-all duration-300 hover:bg-surface-container active:scale-[0.99] relative overflow-hidden cursor-pointer" onclick="openSosView()">
+<div class="absolute left-0 top-0 bottom-0 w-1 bg-primary"></div>
+<div class="flex items-center justify-between pl-space-xs">
+<div class="flex items-center gap-space-md">
+<div class="w-10 h-10 rounded-lg bg-surface-container-high flex items-center justify-center text-primary transition-transform group-hover:scale-105">
+<svg class="w-5 h-5 text-primary" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.75" viewBox="0 0 24 24">
+<path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"></path>
+<path d="M12 8v8"></path>
+<path d="M8 12h8"></path>
+</svg>
+</div>
+<div class="flex flex-col">
+<span class="font-label-lg text-label-lg text-[#f1f5f2] font-semibold flex items-center gap-1.5"><span class="inline-block w-2 h-2 rounded-full mr-1.5 animate-pulse shrink-0" style="background-color: rgb(226, 147, 103);"></span>긴급 SOS 방패</span>
+<span class="font-body-sm text-body-sm text-[#c2d0c7] mt-0.5 font-normal">순간의 유혹이 찾아올 때&nbsp;<br></span>
+</div>
+</div>
+<div class="w-8 h-8 rounded-full bg-surface-container flex items-center justify-center text-[#c2d0c7] group-hover:text-primary transition-colors">
+<svg class="w-4 h-4" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.75" viewBox="0 0 24 24">
+<polyline points="9 18 15 12 9 6"></polyline>
+</svg>
+</div>
+</div>
+</a>
+</section>
+<!-- 4. Word of Grace Meditation -->
+<section class="flex flex-col bg-surface-container-low rounded-xl p-space-lg relative">
+<div class="flex items-center justify-between mb-space-md">
+<div class="flex items-center gap-2 text-on-surface-variant">
+<svg class="w-[18px] h-[18px] text-primary" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.75" viewBox="0 0 24 24">
+<path d="M4 19.5A2.5 2.5 0 0 1 6.5 17H20"></path>
+<path d="M6.5 2H20v20H6.5A2.5 2.5 0 0 1 4 19.5v-15A2.5 2.5 0 0 1 6.5 2z"></path>
+<path d="M8 7h8"></path>
+<path d="M8 11h6"></path>
+</svg>
+<span class="font-label-md text-label-md tracking-wider uppercase font-semibold">오늘의 말씀</span>
+</div>
+<span class="font-label-sm text-label-sm text-on-surface-variant">매일 오전 6시 갱신</span>
+</div>
+<blockquote class="font-body-lg text-body-lg text-[#edf2ee] font-normal leading-relaxed tracking-tight pl-3 py-1 border-l-2 border-primary/40 leading-[1.85]">
+            “내가 네 갈 길을 가르쳐 보이고 너를 주목하여 훈계하리로다”
+          </blockquote>
+<div class="mt-space-sm pl-3">
+<cite class="font-label-md text-label-md text-[#a7b8ae] not-italic font-medium">시편 32:8</cite>
+</div>
+<div class="mt-space-lg pt-space-md flex items-center justify-between">
+<span class="font-body-sm text-body-sm text-on-surface-variant">말씀을 곱씹으며 <br>마음을 정돈하셨나요?</span>
+<button aria-pressed="true" class="inline-flex items-center gap-1.5 px-space-md py-2 rounded-lg font-label-md text-label-md transition-all active:scale-95 bg-primary-container text-on-primary-container" id="meditation-btn" onclick="toggleMeditation()" type="button">
+<svg class="w-4 h-4 text-on-primary-container" fill="none" id="meditation-icon" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" viewBox="0 0 24 24">
+<path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"></path>
+<polyline points="22 4 12 14.01 9 11.01"></polyline>
+</svg>
+<span class="font-semibold text-[#002114]" id="meditation-text">묵상 기록됨</span>
+</button>
+</div>
+</section>
+<!-- 5. Daily Liturgy of Discipline (Habits) -->
+<section class="flex flex-col">
+<div class="flex items-center justify-between mb-space-sm">
+<div class="flex items-baseline gap-2">
+<h2 class="font-headline-md text-headline-md font-semibold text-[#f1f5f2]">오늘의 루틴</h2>
+<span class="font-label-md text-label-md text-primary-container font-semibold" id="routine-counter">4 / 4 완료</span>
+</div>
+<span class="font-label-sm text-label-sm text-[#a7b8ae] font-medium">성결의 일상 세우기</span>
+</div>
+<div class="bg-surface-container-low rounded-xl overflow-hidden divide-y-0">
+<!-- Habit 1 -->
+<div class="group flex items-center justify-between p-space-md hover:bg-surface-container transition-colors cursor-pointer select-none" data-done="true" onclick="toggleHabit(this)">
+<div class="flex items-center gap-space-md min-w-0">
+<div class="check-box w-6 h-6 rounded-md bg-primary-container flex items-center justify-center text-on-primary-container transition-all">
+<svg class="w-3.5 h-3.5" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2.2" viewBox="0 0 24 24"><polyline points="20 6 9 17 4 12"></polyline></svg>
+</div>
+<div class="flex flex-col min-w-0">
+<span class="item-title font-body-md text-body-md text-[#bbcac0] line-through truncate transition-colors">아침 기도 15분</span>
+<span class="item-subtitle font-label-sm text-label-sm text-[#a7b8ae]">오전 7:15 완료됨</span>
+</div>
+</div>
+<span class="font-label-sm text-label-sm text-[#a7b8ae] shrink-0 font-medium">영적 호흡</span>
+</div>
+<div class="h-[1px] bg-surface-container-highest/30 mx-space-md"></div>
+<!-- Habit 2 -->
+<div class="group flex items-center justify-between p-space-md hover:bg-surface-container transition-colors cursor-pointer select-none" data-done="true" onclick="toggleHabit(this)">
+<div class="flex items-center gap-space-md min-w-0">
+<div class="check-box w-6 h-6 rounded-md bg-primary-container flex items-center justify-center text-on-primary-container transition-all">
+<svg class="w-3.5 h-3.5" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2.2" viewBox="0 0 24 24"><polyline points="20 6 9 17 4 12"></polyline></svg>
+</div>
+<div class="flex flex-col min-w-0">
+<span class="item-title font-body-md text-body-md text-[#bbcac0] line-through truncate transition-colors">말씀 통독</span>
+<span class="item-subtitle font-label-sm text-label-sm text-[#a7b8ae]">시편 32편 묵상 완료</span>
+</div>
+</div>
+<span class="font-label-sm text-label-sm text-[#a7b8ae] shrink-0 font-medium">생명의 양식</span>
+</div>
+<div class="h-[1px] bg-surface-container-highest/30 mx-space-md"></div>
+<!-- Habit 3 -->
+<div class="group flex items-center justify-between p-space-md hover:bg-surface-container transition-colors cursor-pointer select-none" data-done="true" onclick="toggleHabit(this)">
+<div class="flex items-center gap-space-md min-w-0">
+<div class="check-box w-6 h-6 rounded-md bg-primary-container flex items-center justify-center text-on-primary-container transition-all">
+<svg class="w-3.5 h-3.5" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2.2" viewBox="0 0 24 24"><polyline points="20 6 9 17 4 12"></polyline></svg>
+</div>
+<div class="flex flex-col min-w-0">
+<span class="item-title font-body-md text-body-md text-[#bbcac0] line-through truncate transition-colors">시선 지키기 (미디어 절제)</span>
+<span class="item-subtitle font-label-sm text-label-sm text-[#a7b8ae]">순결한 하루 유지</span>
+</div>
+</div>
+<span class="font-label-sm text-label-sm text-[#a7b8ae] shrink-0 font-medium">영적 절제</span>
+</div>
+<div class="h-[1px] bg-surface-container-highest/30 mx-space-md"></div>
+<!-- Habit 4 -->
+<div class="group flex items-center justify-between p-space-md hover:bg-surface-container transition-colors cursor-pointer select-none" data-done="true" onclick="toggleHabit(this)">
+<div class="flex items-center gap-space-md min-w-0">
+<div class="check-box w-6 h-6 rounded-md bg-primary-container flex items-center justify-center text-on-primary-container transition-all">
+<svg class="w-3.5 h-3.5" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2.2" viewBox="0 0 24 24"><polyline points="20 6 9 17 4 12"></polyline></svg>
+</div>
+<div class="flex flex-col min-w-0">
+<span class="item-title font-body-md text-body-md text-[#bbcac0] line-through truncate transition-colors">취침 전 감사 및 회개 기도</span>
+<span class="item-subtitle font-label-sm text-label-sm text-[#a7b8ae]">30일의 감사 고백 완료</span>
+</div>
+</div>
+<span class="font-label-sm text-label-sm text-[#a7b8ae] shrink-0 font-medium">취침 전</span>
+</div>
+</div>
+</section>
+<!-- 6. Whisper of Stillness / Soul Note -->
+<section class="p-space-md rounded-xl bg-surface-container-lowest flex items-start gap-3">
+<svg class="w-5 h-5 text-primary mt-0.5 shrink-0" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.75" viewBox="0 0 24 24">
+<path d="M11 20A7 7 0 0 1 4 13C4 8 11 3 11 3s7 5 7 10a7 7 0 0 1-7 7z"></path>
+<path d="M11 20V9"></path>
+<path d="M11 14c2.5-.5 4-2 4-2"></path>
+</svg>
+<div class="flex flex-col">
+<span class="font-label-md text-label-md text-[#f1f5f2] font-semibold">영혼의 안식처</span>
+<p class="font-body-sm text-body-sm text-[#bbcac0] mt-0.5 leading-relaxed">
+              30일의 시간 동안 함께하신 주님의 은혜를 기억합니다. 온전한 자유는 나의 결단이 아닌 성령의 능력 안에서 완성됩니다.
+            </p>
+</div>
+</section>
+</section>
+<!-- ============================================== -->
+<!-- TAB 2: 여정 (Journey View matching SCREEN_19) -->
+<!-- ============================================== -->
+<section class="tab-pane flex-col w-full space-y-space-xl transition-all duration-300 opacity-0 hidden" id="tab-view-journey">
+<!-- 1. Top Header Area -->
+<section class="flex flex-col pt-space-xs">
+<div class="text-[#9ca3af] font-body-sm text-body-sm tracking-normal">
+<span>10월 30일 수요일</span>
+</div>
+<div class="flex items-baseline gap-2 mt-2">
+<span class="text-[#34d399] font-bold text-body-lg tracking-tight">은혜 님</span>
+<span class="text-[#9ca3af] font-medium text-body-sm tracking-normal">오늘도 주님 안에서</span>
+</div>
+<div class="flex flex-col mt-2">
+<h1 class="font-headline-lg-mobile text-headline-lg-mobile font-bold text-white tracking-tight leading-tight">승리와 회복의 여정</h1>
+<p class="font-body-sm text-body-sm text-[#9ca3af] mt-1">하루하루 은혜로 채워가는 성결의 기록</p>
+</div>
+</section>
+<!-- 2. Streak & Milestones Hero Summary Card -->
+<section class="bg-surface-container-low rounded-xl p-space-lg flex flex-col gap-space-md shadow-sm">
+<div class="flex items-start justify-between">
+<div class="flex flex-col">
+<span class="font-label-sm text-label-sm text-[#9ca3af] tracking-wider uppercase">현재 연속 승리</span>
+<div class="flex items-baseline gap-space-xs mt-0.5">
+<span class="font-display-lg-mobile text-display-lg-mobile font-light text-primary tracking-tight">30</span>
+<span class="font-headline-md text-headline-md text-primary font-normal">일째</span>
+</div>
+</div>
+<div class="px-space-sm py-1 bg-surface-container rounded-lg flex items-center gap-1">
+<svg class="w-3.5 h-3.5 text-primary" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.75" viewBox="0 0 24 24">
+<polyline points="23 6 13.5 15.5 8.5 10.5 1 18"></polyline>
+<polyline points="17 6 23 6 23 12"></polyline>
+</svg>
+<span class="font-label-sm text-label-sm text-primary font-medium">30일 달성 완료</span>
+</div>
+</div>
+<div class="grid grid-cols-2 gap-space-sm pt-space-xs">
+<div class="bg-surface-container-lowest rounded-lg p-space-md flex flex-col justify-center">
+<span class="font-label-sm text-label-sm text-[#9ca3af]">누적 정결 시간</span>
+<span class="font-headline-md text-headline-md text-[#ffffff] font-normal mt-0.5">720<span class="font-label-sm text-label-sm text-[#9ca3af] font-normal ml-0.5">시간</span></span>
+</div>
+<div class="bg-surface-container-lowest rounded-lg p-space-md flex flex-col justify-center">
+<span class="font-label-sm text-label-sm text-[#9ca3af]">성취율 (10월)</span>
+<span class="font-headline-md text-headline-md text-[#ffffff] font-normal mt-0.5">100<span class="font-label-sm text-label-sm text-primary font-medium ml-0.5">%</span></span>
+</div>
+</div>
+<div class="flex flex-col gap-1.5 pt-space-xs">
+<div class="flex items-center justify-between text-label-sm font-label-sm">
+<span class="text-zinc-300 font-medium">90일 순결 서약 완주</span>
+<span class="text-emerald-400 font-medium">60일 남음 <span class="text-[#9ca3af] font-normal">(33.3%)</span></span>
+</div>
+<div class="w-full h-2 bg-surface-container-highest rounded-full overflow-hidden">
+<div class="h-full bg-primary-container rounded-full transition-all duration-500" style="width: 33.3%;"></div>
+</div>
+</div>
+</section>
+<!-- 3. Monthly Habit Grass / Heatmap -->
+<section class="flex flex-col gap-space-md">
+<div class="flex items-center justify-between">
+<div class="flex flex-col">
+<h2 class="font-label-lg text-label-lg text-[#f1f5f2] font-semibold">10월의 성결 기록</h2>
+<span class="font-label-sm text-label-sm text-[#9ca3af]">30일 중 30일 승리 (무결점 지속)</span>
+</div>
+<div class="inline-flex items-center p-0.5 rounded-full bg-surface-container-low shrink-0 select-none shadow-sm" id="period-segment-control" role="tablist">
+<button class="period-tab px-3 py-1 rounded-full font-label-sm text-label-sm text-[#9ca3af] transition-all hover:text-[#f1f5f2] whitespace-nowrap" type="button">주간</button>
+<button class="period-tab px-3 py-1 rounded-full font-label-sm text-label-sm text-[#0f172a] bg-[#34d399] font-semibold shadow-sm transition-all whitespace-nowrap" type="button">월간</button>
+<button class="period-tab px-3 py-1 rounded-full font-label-sm text-label-sm text-[#9ca3af] transition-all hover:text-[#f1f5f2] whitespace-nowrap" type="button">전체</button>
+</div>
+</div>
+<div class="bg-surface-container-low rounded-xl p-space-md flex flex-col gap-space-sm shadow-sm">
+<div class="grid grid-cols-7 text-center font-label-sm text-label-sm text-[#9ca3af] pb-1 font-medium">
+<span>일</span><span>월</span><span>화</span><span>수</span><span>목</span><span>금</span><span>토</span>
+</div>
+<div class="grid grid-cols-7 gap-1.5 place-items-center">
+<div class="w-full aspect-square rounded-md bg-surface-container-lowest/60 flex items-center justify-center font-label-sm text-label-sm text-[#71717a]">29</div>
+<div class="w-full aspect-square rounded-md bg-surface-container-lowest/60 flex items-center justify-center font-label-sm text-label-sm text-[#71717a]">30</div>
+<div class="w-full aspect-square rounded-md bg-[#34d399] flex items-center justify-center font-label-sm text-label-sm text-[#0f172a] font-bold">1</div>
+<div class="w-full aspect-square rounded-md bg-[#34d399] flex items-center justify-center font-label-sm text-label-sm text-[#0f172a] font-bold">2</div>
+<div class="w-full aspect-square rounded-md bg-[#34d399] flex items-center justify-center font-label-sm text-label-sm text-[#0f172a] font-bold">3</div>
+<div class="w-full aspect-square rounded-md bg-[#34d399] flex items-center justify-center font-label-sm text-label-sm text-[#0f172a] font-bold">4</div>
+<div class="w-full aspect-square rounded-md bg-[#34d399] flex items-center justify-center font-label-sm text-label-sm text-[#0f172a] font-bold">5</div>
+<div class="w-full aspect-square rounded-md bg-[#34d399] flex items-center justify-center font-label-sm text-label-sm text-[#0f172a] font-bold">6</div>
+<div class="w-full aspect-square rounded-md bg-[#34d399] flex items-center justify-center font-label-sm text-label-sm text-[#0f172a] font-bold">7</div>
+<div class="w-full aspect-square rounded-md bg-[#34d399] flex items-center justify-center font-label-sm text-label-sm text-[#0f172a] font-bold">8</div>
+<div class="w-full aspect-square rounded-md bg-[#34d399] flex items-center justify-center font-label-sm text-label-sm text-[#0f172a] font-bold">9</div>
+<div class="w-full aspect-square rounded-md bg-[#34d399] flex items-center justify-center font-label-sm text-label-sm text-[#0f172a] font-bold">10</div>
+<div class="w-full aspect-square rounded-md bg-[#34d399] flex items-center justify-center font-label-sm text-label-sm text-[#0f172a] font-bold">11</div>
+<div class="w-full aspect-square rounded-md bg-[#34d399] flex items-center justify-center font-label-sm text-label-sm text-[#0f172a] font-bold">12</div>
+<div class="w-full aspect-square rounded-md bg-[#34d399] flex items-center justify-center font-label-sm text-label-sm text-[#0f172a] font-bold">13</div>
+<div class="w-full aspect-square rounded-md bg-[#34d399] flex items-center justify-center font-label-sm text-label-sm text-[#0f172a] font-bold">14</div>
+<div class="w-full aspect-square rounded-md bg-[#34d399] flex items-center justify-center font-label-sm text-label-sm text-[#0f172a] font-bold">15</div>
+<div class="w-full aspect-square rounded-md bg-[#34d399] flex items-center justify-center font-label-sm text-label-sm text-[#0f172a] font-bold">16</div>
+<div class="w-full aspect-square rounded-md bg-[#34d399] flex items-center justify-center font-label-sm text-label-sm text-[#0f172a] font-bold">17</div>
+<div class="w-full aspect-square rounded-md bg-[#34d399] flex items-center justify-center font-label-sm text-label-sm text-[#0f172a] font-bold">18</div>
+<div class="w-full aspect-square rounded-md bg-[#34d399] flex items-center justify-center font-label-sm text-label-sm text-[#0f172a] font-bold">19</div>
+<div class="w-full aspect-square rounded-md bg-[#34d399] flex items-center justify-center font-label-sm text-label-sm text-[#0f172a] font-bold">20</div>
+<div class="w-full aspect-square rounded-md bg-[#34d399] flex items-center justify-center font-label-sm text-label-sm text-[#0f172a] font-bold">21</div>
+<div class="w-full aspect-square rounded-md bg-[#34d399] flex items-center justify-center font-label-sm text-label-sm text-[#0f172a] font-bold">22</div>
+<div class="w-full aspect-square rounded-md bg-[#34d399] flex items-center justify-center font-label-sm text-label-sm text-[#0f172a] font-bold">23</div>
+<div class="w-full aspect-square rounded-md bg-[#34d399] flex items-center justify-center font-label-sm text-label-sm text-[#0f172a] font-bold">24</div>
+<div class="w-full aspect-square rounded-md bg-[#34d399] flex items-center justify-center font-label-sm text-label-sm text-[#0f172a] font-bold">25</div>
+<div class="w-full aspect-square rounded-md bg-[#34d399] flex items-center justify-center font-label-sm text-label-sm text-[#0f172a] font-bold">26</div>
+<div class="w-full aspect-square rounded-md bg-[#34d399] flex items-center justify-center font-label-sm text-label-sm text-[#0f172a] font-bold">27</div>
+<div class="w-full aspect-square rounded-md bg-[#34d399] flex items-center justify-center font-label-sm text-label-sm text-[#0f172a] font-bold">28</div>
+<div class="w-full aspect-square rounded-md bg-[#34d399] flex items-center justify-center font-label-sm text-label-sm text-[#0f172a] font-bold">29</div>
+<div class="w-full aspect-square rounded-md bg-[#5af0b3] flex flex-col items-center justify-center font-label-sm text-label-sm text-[#0f172a] font-bold shadow-sm relative">
+<span>30</span><span class="w-1 h-1 rounded-full bg-[#0f172a] mt-0.5"></span>
+</div>
+<div class="w-full aspect-square rounded-md bg-surface-container flex items-center justify-center font-label-sm text-label-sm text-[#71717a]">31</div>
+<div class="w-full aspect-square rounded-md bg-surface-container-lowest/60 flex items-center justify-center font-label-sm text-label-sm text-[#71717a]">1</div>
+<div class="w-full aspect-square rounded-md bg-surface-container-lowest/60 flex items-center justify-center font-label-sm text-label-sm text-[#71717a]">2</div>
+</div>
+<div class="flex items-center justify-between pt-space-xs mt-1">
+<span class="font-label-sm text-label-sm text-[#9ca3af]">오늘: 30일차 달성 완료</span>
+<div class="flex items-center gap-1.5">
+<span class="font-label-sm text-label-sm text-[#9ca3af]">예정</span>
+<span class="w-3 h-3 rounded-sm bg-surface-container"></span>
+<span class="w-3 h-3 rounded-sm bg-[#5af0b3]/40"></span>
+<span class="w-3 h-3 rounded-sm bg-[#34d399]"></span>
+<span class="w-3 h-3 rounded-sm bg-[#5af0b3]"></span>
+<span class="font-label-sm text-label-sm text-[#9ca3af] font-medium">승리</span>
+</div>
+</div>
+</div>
+</section>
+<!-- 4. Recovery Stage Milestones -->
+<section class="flex flex-col gap-space-md">
+<div class="flex items-center justify-between">
+<h2 class="font-label-lg text-label-lg text-[#e5e7eb] font-semibold">회복의 마일스톤</h2>
+<span class="font-label-sm text-label-sm text-[#34d399] font-medium">5/6 달성</span>
+</div>
+<div class="bg-surface-container-low rounded-xl p-space-md flex flex-col gap-space-md shadow-sm">
+<!-- 1 Day -->
+<div class="flex items-center gap-space-md opacity-60 transition-opacity">
+<div class="w-8 h-8 rounded-full bg-surface-container-high flex items-center justify-center text-[#a7b8ae] shrink-0 font-bold">
+<svg class="w-4 h-4 text-[#a7b8ae]" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2.2" viewBox="0 0 24 24"><polyline points="20 6 9 17 4 12"></polyline></svg>
+</div>
+<div class="flex-1 min-w-0">
+<div class="flex items-center justify-between">
+<span class="font-label-lg text-label-lg text-[#9ca3af] line-through decoration-[#71717a]/50 font-medium">1일 승리</span>
+<span class="font-label-sm text-label-sm text-[#71717a] font-normal">완료</span>
+</div>
+<p class="font-body-sm text-body-sm text-[#71717a] line-through decoration-[#71717a]/40 truncate mt-0.5">결단의 첫날을 온전히 지켜냄</p>
+</div>
+</div>
+<!-- 3 Days -->
+<div class="flex items-center gap-space-md opacity-60 transition-opacity">
+<div class="w-8 h-8 rounded-full bg-surface-container-high flex items-center justify-center text-[#a7b8ae] shrink-0 font-bold">
+<svg class="w-4 h-4 text-[#a7b8ae]" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2.2" viewBox="0 0 24 24"><polyline points="20 6 9 17 4 12"></polyline></svg>
+</div>
+<div class="flex-1 min-w-0">
+<div class="flex items-center justify-between">
+<span class="font-label-lg text-label-lg text-[#9ca3af] line-through decoration-[#71717a]/50 font-medium">3일 승리</span>
+<span class="font-label-sm text-label-sm text-[#71717a] font-normal">완료</span>
+</div>
+<p class="font-body-sm text-body-sm text-[#71717a] line-through decoration-[#71717a]/40 truncate mt-0.5">초기 갈망의 고비를 기도로 극복</p>
+</div>
+</div>
+<!-- 1 Week -->
+<div class="flex items-center gap-space-md opacity-60 transition-opacity">
+<div class="w-8 h-8 rounded-full bg-surface-container-high flex items-center justify-center text-[#a7b8ae] shrink-0 font-bold">
+<svg class="w-4 h-4 text-[#a7b8ae]" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2.2" viewBox="0 0 24 24"><polyline points="20 6 9 17 4 12"></polyline></svg>
+</div>
+<div class="flex-1 min-w-0">
+<div class="flex items-center justify-between">
+<span class="font-label-lg text-label-lg text-[#9ca3af] line-through decoration-[#71717a]/50 font-medium">1주 (7일) 승리</span>
+<span class="font-label-sm text-label-sm text-[#71717a] font-normal">완료</span>
+</div>
+<p class="font-body-sm text-body-sm text-[#71717a] line-through decoration-[#71717a]/40 truncate mt-0.5">도파민 회로의 초기 안정화</p>
+</div>
+</div>
+<!-- 2 Weeks -->
+<div class="flex items-center gap-space-md opacity-60 transition-opacity">
+<div class="w-8 h-8 rounded-full bg-surface-container-high flex items-center justify-center text-[#a7b8ae] shrink-0 font-bold">
+<svg class="w-4 h-4 text-[#a7b8ae]" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2.2" viewBox="0 0 24 24"><polyline points="20 6 9 17 4 12"></polyline></svg>
+</div>
+<div class="flex-1 min-w-0">
+<div class="flex items-center justify-between">
+<span class="font-label-lg text-label-lg text-[#9ca3af] line-through decoration-[#71717a]/50 font-medium">2주 (14일) 승리</span>
+<span class="font-label-sm text-label-sm text-[#71717a] font-normal">완료</span>
+</div>
+<p class="font-body-sm text-body-sm text-[#71717a] line-through decoration-[#71717a]/40 truncate mt-0.5">시선과 영적 생각이 맑아짐</p>
+</div>
+</div>
+<!-- 30 Days (Active unlocked) -->
+<div class="flex items-center gap-space-md p-space-xs rounded-lg bg-surface-container/60 -mx-space-xs">
+<div class="w-8 h-8 rounded-full bg-primary flex items-center justify-center text-[#003825] shrink-0 shadow-sm font-bold">
+<svg class="w-4 h-4 text-[#003825]" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5" viewBox="0 0 24 24"><polyline points="20 6 9 17 4 12"></polyline></svg>
+</div>
+<div class="flex-1 min-w-0">
+<div class="flex items-center justify-between">
+<div class="flex items-center gap-1.5">
+<span class="font-label-lg text-label-lg text-[#f8fafc] font-semibold">30일 승리</span>
+<span class="inline-flex items-center gap-1 px-2 py-0.5 rounded-full border border-[#3c4a42]/30 bg-surface-container text-[#34d399] font-label-sm text-label-sm font-medium">
+<svg class="w-3 h-3 text-[#34d399]" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" viewBox="0 0 24 24"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"></polygon></svg>
+<span>동행자 해금</span>
+</span>
+</div>
+<span class="font-label-sm text-label-sm text-primary font-semibold">달성 완료</span>
+</div>
+<p class="font-body-sm text-body-sm text-[#e2e3e0] truncate mt-0.5">새로운 영적 습관의 견고한 정착</p>
+</div>
+</div>
+<!-- 90 Days -->
+<div class="flex items-center gap-space-md">
+<div class="w-8 h-8 rounded-full bg-surface-container-high flex items-center justify-center text-[#a7b8ae] shrink-0 font-medium">
+<span class="font-label-sm text-label-sm text-[#a7b8ae]">30</span>
+</div>
+<div class="flex-1 min-w-0">
+<div class="flex items-center justify-between">
+<span class="font-label-lg text-label-lg text-[#9ca3af] font-medium">90일 완주</span>
+<span class="font-label-sm text-label-sm text-[#34d399] font-medium">다음 목표 (30/90)</span>
+</div>
+<p class="font-body-sm text-body-sm text-[#71717a] truncate mt-0.5">온전한 회복과 거룩한 자유의 도달</p>
+</div>
+</div>
+</div>
+</section>
+<!-- 5. Motivational Reflection / Scripture Card -->
+<section class="bg-surface-container-low rounded-xl p-space-lg flex gap-space-md shadow-sm">
+<div class="w-1 rounded-full bg-[#34d399] shrink-0"></div>
+<div class="flex flex-col gap-space-xs">
+<span class="font-label-sm text-label-sm text-[#34d399] font-semibold tracking-wide">오늘의 묵상 말씀</span>
+<p class="font-body-md text-body-md text-[#f1f5f2] font-medium leading-relaxed">
+              “우리가 사방으로 욱여쌈을 당하여도 싸이지 아니하며 답답한 일을 당하여도 낙심하지 아니하며”
+            </p>
+<span class="font-label-sm text-label-sm text-[#a7b8ae] pt-0.5">고린도후서 4:8</span>
+</div>
+</section>
+</section>
+<!-- ============================================== -->
+<!-- TAB 3: 동행 (Fellowship View matching SCREEN_15) -->
+<!-- ============================================== -->
+<section class="tab-pane flex-col w-full pb-10 space-y-space-xl transition-all duration-300 opacity-0 hidden" id="tab-view-fellowship">
+<!-- Page Header Subtitle & Date Stamp -->
+<section class="flex flex-col pt-space-xs">
+<div class="text-xs text-on-surface-variant font-medium tracking-tight mb-2">10월 30일 수요일</div>
+<div class="font-bold text-on-surface mb-1 text-[16px]">
+<span class="text-primary font-bold">은혜 님</span>
+<span class="text-on-surface-variant font-normal text-sm ml-1">오늘도 주님 안에서</span>
+</div>
+<h1 class="font-headline-lg-mobile text-headline-lg-mobile font-semibold text-on-surface tracking-tight mb-1">유혹을 이기는 영적 동행</h1>
+<p class="font-body-sm text-body-sm text-on-surface-variant leading-relaxed">
+            순결을 지키고 마음의 성전을 정결하게 세우는 즉각적인 무기고입니다.
+          </p>
+</section>
+<!-- SECTION 1: SOS 긴급 비상 방패 (Panic Module) -->
+<section class="mb-4">
+<div class="relative overflow-hidden rounded-xl bg-surface-container-low p-5 shadow-sm border border-outline-variant/30">
+<div class="relative z-10 flex flex-col gap-4">
+<div class="flex items-center justify-between">
+<div class="inline-flex items-center gap-1.5 px-2.5 py-1 rounded-md bg-tertiary-container/15 text-tertiary font-label-sm text-label-sm font-semibold tracking-wide">
+<svg class="w-3.5 h-3.5 text-tertiary shrink-0" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" viewBox="0 0 24 24"><circle cx="12" cy="12" r="10"></circle><line x1="12" x2="12" y1="8" y2="12"></line><line x1="12" x2="12.01" y1="16" y2="16"></line></svg>
+                  긴급 SOS 방패
+                </div>
+<span class="font-label-sm text-label-sm text-on-surface-variant flex items-center gap-1.5">
+<svg class="w-3.5 h-3.5 text-outline shrink-0" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.8" viewBox="0 0 24 24"><path d="M2 10v4"></path><path d="M6 7v10"></path><path d="M10 4v16"></path><path d="M14 7v10"></path><path d="M18 10v4"></path><path d="M22 12v0"></path></svg>
+                  진동 및 안정 루틴
+                </span>
+</div>
+<div>
+<h2 class="font-headline-md text-headline-md text-on-surface font-medium">유혹의 파도가 밀려올 때</h2>
+<p class="font-body-sm text-body-sm text-on-surface-variant mt-1 leading-relaxed">
+                  스마트폰을 엎어놓고 즉시 호흡을 가다듬으세요. 죄와 맞서 싸우지 말고, 하나님께로 즉각 도망치십시오.
+                </p>
+</div>
+<!-- Emergency Quote Plate -->
+<div class="rounded-lg bg-surface-container-lowest p-3.5 flex flex-col gap-1.5">
+<div class="flex items-center gap-1.5 text-primary">
+<svg class="w-3.5 h-3.5 text-primary shrink-0" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.8" viewBox="0 0 24 24"><path d="M2 3h6a4 4 0 0 1 4 4v14a3 3 0 0 0-3-3H2z"></path><path d="M22 3h-6a4 4 0 0 0-4 4v14a3 3 0 0 1 3-3h7z"></path></svg>
+<span class="font-label-sm text-label-sm font-semibold">고린도전서 10:13</span>
+</div>
+<p class="font-body-sm text-body-sm text-on-surface italic leading-relaxed">
+                  “사람이 감당할 시험 밖에는 너희가 당한 것이 없나니... 시험 당할 즈음에 또한 피할 길을 내사 너희로 능히 감당하게 하시느니라.”
+                </p>
+</div>
+<!-- Master Panic Button -->
+<button class="w-full flex items-center justify-center gap-2 py-3.5 px-space-lg rounded-xl bg-primary text-on-primary font-label-lg text-label-lg font-semibold active:scale-[0.98] transition-all shadow-sm" id="panicBtn" onclick="openSosView()">
+<svg class="w-4 h-4 text-on-primary shrink-0" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2.2" viewBox="0 0 24 24"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"></path></svg>
+<span>지금 1분 긴급 탈출 루틴 실행</span>
+</button>
+<div class="flex items-center justify-around pt-1 text-center font-label-sm text-label-sm text-outline">
+<span class="flex items-center gap-1">
+<span class="w-1.5 h-1.5 rounded-full bg-primary"></span>
+                  3회 깊은 복식호흡
+                </span>
+<span class="text-outline-variant">•</span>
+<span class="flex items-center gap-1">
+<span class="w-1.5 h-1.5 rounded-full bg-primary"></span>
+                  단호한 말씀 선포
+                </span>
+<span class="text-outline-variant">•</span>
+<span class="flex items-center gap-1">
+<span class="w-1.5 h-1.5 rounded-full bg-primary"></span>
+                  자리 즉시 박차기
+                </span>
+</div>
+</div>
+</div>
+</section>
+<!-- SECTION 2: 상황별 즉각 처방 무기 -->
+<section class="flex flex-col gap-3.5 mb-6">
+<div class="flex flex-col">
+<div class="flex items-center justify-between">
+<h3 class="font-headline-md text-headline-md text-on-surface font-semibold tracking-tight">상황별 즉각 처방</h3>
+<span class="font-label-sm text-label-sm text-primary font-medium">영적 전신갑주</span>
+</div>
+<p class="font-body-sm text-body-sm text-on-surface-variant mt-0.5">
+              지금 내가 처한 위기와 취약한 틈을 즉시 봉쇄하세요.
+            </p>
+</div>
+<div class="grid grid-cols-2 gap-3" id="prescriptionsContainer">
+<!-- 1. 유혹이 올 때 -->
+<div class="presc-card rounded-2xl bg-[#1a1c1b] border border-white/5 p-4 flex flex-col justify-between min-h-[140px] cursor-pointer hover:border-emerald-500/30 active:scale-[0.98] transition-all" onclick="openPrescription(0)">
+<div class="flex items-center justify-between">
+<div class="w-8 h-8 rounded-lg bg-surface-container flex items-center justify-center text-primary">
+<svg class="w-4 h-4 text-primary" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.8" viewBox="0 0 24 24"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"></path></svg>
+</div>
+<svg class="w-4 h-4 text-white/30 shrink-0" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" viewBox="0 0 24 24"><polyline points="9 18 15 12 9 6"></polyline></svg>
+</div>
+<div class="mt-3">
+<h4 class="text-[15px] font-bold text-white tracking-tight leading-snug">유혹이 찾아올 때</h4>
+<span class="text-xs font-semibold text-emerald-400 mt-1 block">고린도전서 10:13</span>
+<p class="text-xs text-white/60 line-clamp-2 leading-relaxed mt-1">“피할 길을 내사 능히 감당하게 하시느니라”</p>
+</div>
+</div>
+<!-- 2. 마음이 흔들릴 때 -->
+<div class="presc-card rounded-2xl bg-[#1a1c1b] border border-white/5 p-4 flex flex-col justify-between min-h-[140px] cursor-pointer hover:border-emerald-500/30 active:scale-[0.98] transition-all" onclick="openPrescription(1)">
+<div class="flex items-center justify-between">
+<div class="w-8 h-8 rounded-lg bg-surface-container flex items-center justify-center text-primary">
+<svg class="w-4 h-4 text-primary" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.8" viewBox="0 0 24 24"><path d="M12 2.69l5.66 5.66a8 8 0 1 1-11.31 0z"></path></svg>
+</div>
+<svg class="w-4 h-4 text-white/30 shrink-0" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" viewBox="0 0 24 24"><polyline points="9 18 15 12 9 6"></polyline></svg>
+</div>
+<div class="mt-3">
+<h4 class="text-[15px] font-bold text-white tracking-tight leading-snug">마음이 흔들릴 때</h4>
+<span class="text-xs font-semibold text-emerald-400 mt-1 block">시편 51:10</span>
+<p class="text-xs text-white/60 line-clamp-2 leading-relaxed mt-1">“정한 마음을 창조하시고 정직한 영을...”</p>
+</div>
+</div>
+<!-- 3. 죄책감이 들 때 -->
+<div class="presc-card rounded-2xl bg-[#1a1c1b] border border-white/5 p-4 flex flex-col justify-between min-h-[140px] cursor-pointer hover:border-emerald-500/30 active:scale-[0.98] transition-all" onclick="openPrescription(2)">
+<div class="flex items-center justify-between">
+<div class="w-8 h-8 rounded-lg bg-surface-container flex items-center justify-center text-primary">
+<svg class="w-4 h-4 text-primary" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.8" viewBox="0 0 24 24"><path d="M19 14c1.49-1.46 3-3.21 3-5.5A5.5 5.5 0 0 0 16.5 3c-1.76 0-3 .5-4.5 2-1.5-1.5-2.74-2-4.5-2A5.5 5.5 0 0 0 2 8.5c0 2.3 1.5 4.05 3 5.5l7 7Z"></path></svg>
+</div>
+<svg class="w-4 h-4 text-white/30 shrink-0" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" viewBox="0 0 24 24"><polyline points="9 18 15 12 9 6"></polyline></svg>
+</div>
+<div class="mt-3">
+<h4 class="text-[15px] font-bold text-white tracking-tight leading-snug">죄책감이 들 때</h4>
+<span class="text-xs font-semibold text-emerald-400 mt-1 block">로마서 8:1</span>
+<p class="text-xs text-white/60 line-clamp-2 leading-relaxed mt-1">“그리스도 안에 있는 자에게는 결코 정죄함...”</p>
+</div>
+</div>
+<!-- 4. 영적 무기력 -->
+<div class="presc-card rounded-2xl bg-[#1a1c1b] border border-white/5 p-4 flex flex-col justify-between min-h-[140px] cursor-pointer hover:border-emerald-500/30 active:scale-[0.98] transition-all" onclick="openPrescription(3)">
+<div class="flex items-center justify-between">
+<div class="w-8 h-8 rounded-lg bg-surface-container flex items-center justify-center text-primary">
+<svg class="w-4 h-4 text-primary" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.8" viewBox="0 0 24 24"><path d="M8.5 14.5A2.5 2.5 0 0 0 11 12c0-1.38-.5-2-1-3-1.072-2.143-.224-4.054 2-6 .5 2.5 2 4.9 4 6.5 2 1.6 3 3.5 3 5.5a7 7 0 1 1-14 0c0-1.153.433-2.294 1-3a2.5 2.5 0 0 0 2.5 2.5z"></path></svg>
+</div>
+<svg class="w-4 h-4 text-white/30 shrink-0" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" viewBox="0 0 24 24"><polyline points="9 18 15 12 9 6"></polyline></svg>
+</div>
+<div class="mt-3">
+<h4 class="text-[15px] font-bold text-white tracking-tight leading-snug">영적 무기력</h4>
+<span class="text-xs font-semibold text-emerald-400 mt-1 block">빌립보서 4:13</span>
+<p class="text-xs text-white/60 line-clamp-2 leading-relaxed mt-1">“능력 주시는 자 안에서 내가 모든 것을...”</p>
+</div>
+</div>
+</div>
+</section>
+<!-- SECTION 3: 함께 싸우는 동행자들 -->
+<section class="flex flex-col gap-3.5 mb-2">
+<div class="flex flex-col">
+<div class="flex items-center justify-between">
+<h3 class="font-headline-md text-headline-md text-on-surface font-semibold tracking-tight">함께 싸우는 동행자들</h3>
+<span class="font-label-sm text-label-sm text-outline">실시간 연결</span>
+</div>
+<p class="font-body-sm text-body-sm text-on-surface-variant mt-0.5">
+              유혹은 어둠과 고립 속에서 자랍니다. 지금 이 순간도 홀로 싸우고 있지 않습니다.
+            </p>
+</div>
+<!-- Live Active Intercession Counter Banner -->
+<div class="rounded-xl bg-surface-container-low p-4 flex flex-col gap-3">
+<div class="flex items-center justify-between">
+<div class="flex items-center gap-2.5">
+<span class="relative flex h-3 w-3">
+<span class="relative inline-flex rounded-full h-3 w-3 bg-primary"></span>
+</span>
+<span class="font-label-md text-label-md font-semibold text-on-surface">
+                  지금 <span class="text-primary font-bold">142명</span>의 성도가 순결을 지키며 깨어 있습니다
+                </span>
+</div>
+</div>
+<!-- Quick SOS Request Button -->
+<button class="w-full py-2.5 px-3 rounded-lg bg-surface-container hover:bg-surface-container-high text-on-surface font-label-md text-label-md font-medium transition-colors flex items-center justify-center gap-2 active:scale-[0.99]" id="sosRequestBtn" onclick="triggerSosRequest(this)">
+<svg class="w-4 h-4 text-primary shrink-0" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.8" viewBox="0 0 24 24"><path d="M18 11V6a2 2 0 0 0-2-2v0a2 2 0 0 0-2 2v0"></path><path d="M14 10V4a2 2 0 0 0-2-2v0a2 2 0 0 0-2 2v2"></path><path d="M10 10.5V6a2 2 0 0 0-2-2v0a2 2 0 0 0-2 2v8"></path><path d="M18 8a2 2 0 1 1 4 0v6a8 8 0 0 1-8 8h-2c-2.8 0-4.5-.86-5.99-2.34l-3.6-3.6a2 2 0 0 1 2.83-2.82L7 15"></path></svg>
+<span>지금 중보가 절실해요 (익명 1클릭 SOS)</span>
+</button>
+</div>
+<!-- Community Real-time Feed -->
+<div class="flex flex-col gap-2.5 mt-1" id="fellowshipFeed">
+<!-- Feed Item 1 -->
+<div class="rounded-xl bg-surface-container-low p-3.5 flex flex-col gap-2">
+<div class="flex items-center justify-between">
+<div class="flex items-center gap-1.5">
+<span class="font-label-sm text-label-sm text-primary font-semibold">서울 성도</span>
+<span class="text-outline text-xs">•</span>
+<span class="font-label-sm text-label-sm text-outline">방금 전</span>
+</div>
+<span class="font-label-sm text-label-sm px-1.5 py-0.5 rounded bg-surface-container text-primary">승리 간증</span>
+</div>
+<p class="font-body-sm text-body-sm text-on-surface leading-relaxed">
+                “방금 갑작스러운 충동이 올라왔지만, 곧바로 신발 신고 밖으로 나가 찬 공기 마시며 기도했습니다. 주님께서 피할 길을 주셨습니다!”
+              </p>
+<div class="flex items-center justify-between pt-1">
+<span class="font-label-sm text-label-sm text-on-surface-variant flex items-center gap-1.5">
+<svg class="w-3.5 h-3.5 text-primary shrink-0" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.8" viewBox="0 0 24 24"><path d="M8.5 14.5A2.5 2.5 0 0 0 11 12c0-1.38-.5-2-1-3-1.072-2.143-.224-4.054 2-6 .5 2.5 2 4.9 4 6.5 2 1.6 3 3.5 3 5.5a7 7 0 1 1-14 0c0-1.153.433-2.294 1-3a2.5 2.5 0 0 0 2.5 2.5z"></path></svg>
+                  30일째 전진 중
+                </span>
+<button class="prayer-like-btn flex items-center gap-1.5 px-2.5 py-1 rounded-md bg-surface-container text-on-surface-variant text-label-sm font-label-sm hover:text-primary transition-colors" onclick="togglePrayerLike(this)">
+<svg class="w-3.5 h-3.5 text-outline-variant shrink-0" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.8" viewBox="0 0 24 24"><path d="M19 14c1.49-1.46 3-3.21 3-5.5A5.5 5.5 0 0 0 16.5 3c-1.76 0-3 .5-4.5 2-1.5-1.5-2.74-2-4.5-2A5.5 5.5 0 0 0 2 8.5c0 2.3 1.5 4.05 3 5.5l7 7Z"></path></svg>
+<span class="count">34</span>명이 함께 기도함
+                </button>
+</div>
+</div>
+<!-- Feed Item 2 -->
+<div class="rounded-xl bg-surface-container-low p-3.5 flex flex-col gap-2">
+<div class="flex items-center justify-between">
+<div class="flex items-center gap-1.5">
+<span class="font-label-sm text-label-sm text-primary font-semibold">청년 D</span>
+<span class="text-outline text-xs">•</span>
+<span class="font-label-sm text-label-sm text-outline">12분 전</span>
+</div>
+<span class="font-label-sm text-label-sm px-1.5 py-0.5 rounded bg-surface-container text-outline">취침 결단</span>
+</div>
+<p class="font-body-sm text-body-sm text-on-surface leading-relaxed">
+                “밤 11시 30분, 스마트폰을 거실 충전기에 꽂아두고 말씀 묵상하며 침상에 듭니다. 오늘도 지켜주신 하나님께 감사드립니다.”
+              </p>
+<div class="flex items-center justify-between pt-1">
+<span class="font-label-sm text-label-sm text-on-surface-variant flex items-center gap-1.5">
+<svg class="w-3.5 h-3.5 text-outline shrink-0" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.8" viewBox="0 0 24 24"><path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path></svg>
+                  평안한 안식
+                </span>
+<button class="prayer-like-btn flex items-center gap-1.5 px-2.5 py-1 rounded-md bg-surface-container text-on-surface-variant text-label-sm font-label-sm hover:text-primary transition-colors" onclick="togglePrayerLike(this)">
+<svg class="w-3.5 h-3.5 text-outline-variant shrink-0" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.8" viewBox="0 0 24 24"><path d="M19 14c1.49-1.46 3-3.21 3-5.5A5.5 5.5 0 0 0 16.5 3c-1.76 0-3 .5-4.5 2-1.5-1.5-2.74-2-4.5-2A5.5 5.5 0 0 0 2 8.5c0 2.3 1.5 4.05 3 5.5l7 7Z"></path></svg>
+<span class="count">58</span>명이 함께 기도함
+                </button>
+</div>
+</div>
+<!-- Feed Item 3 -->
+<div class="rounded-xl bg-surface-container-low p-3.5 flex flex-col gap-2">
+<div class="flex items-center justify-between">
+<div class="flex items-center gap-1.5">
+<span class="font-label-sm text-label-sm text-secondary font-semibold">익명 동행자</span>
+<span class="text-outline text-xs">•</span>
+<span class="font-label-sm text-label-sm text-outline">25분 전</span>
+</div>
+<span class="font-label-sm text-label-sm px-1.5 py-0.5 rounded bg-tertiary-container/15 text-tertiary">위기 돌파</span>
+</div>
+<p class="font-body-sm text-body-sm text-on-surface leading-relaxed">
+                “혼자 있는 방에서 고립감이 커져 위험했는데, 비상 방패 버튼 누르고 1분 복식호흡하며 버텼습니다. 동행자분들 기도 덕분입니다.”
+              </p>
+<div class="flex items-center justify-between pt-1">
+<span class="font-label-sm text-label-sm text-on-surface-variant flex items-center gap-1.5">
+<svg class="w-3.5 h-3.5 text-primary shrink-0" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.8" viewBox="0 0 24 24"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"></path></svg>
+                  시험을 피함
+                </span>
+<button class="prayer-like-btn flex items-center gap-1.5 px-2.5 py-1 rounded-md bg-surface-container text-on-surface-variant text-label-sm font-label-sm hover:text-primary transition-colors" onclick="togglePrayerLike(this)">
+<svg class="w-3.5 h-3.5 text-outline-variant shrink-0" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.8" viewBox="0 0 24 24"><path d="M19 14c1.49-1.46 3-3.21 3-5.5A5.5 5.5 0 0 0 16.5 3c-1.76 0-3 .5-4.5 2-1.5-1.5-2.74-2-4.5-2A5.5 5.5 0 0 0 2 8.5c0 2.3 1.5 4.05 3 5.5l7 7Z"></path></svg>
+<span class="count">89</span>명이 함께 기도함
+                </button>
+</div>
+</div>
+</div>
+</section>
+</section>
+</div>
+</main>
+<!-- Floating Pen Button (for Fellowship tab) -->
+<button class="fixed bottom-20 right-5 z-40 w-14 h-14 rounded-full bg-primary text-[#0d0f0e] flex items-center justify-center hover:opacity-90 active:scale-95 transition-all shadow-md hidden" id="openWriteModalBtn" onclick="openWriteModal()" title="동행 나눔 및 간증 글쓰기">
+<svg class="w-6 h-6 text-[#0d0f0e]" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2.2" viewBox="0 0 24 24">
+<path d="M12 20h9"></path>
+<path d="M16.5 3.5a2.121 2.121 0 0 1 3 3L7 19l-4 1 1-4L16.5 3.5z"></path>
+</svg>
+</button>
+<!-- Interactive 1-Minute Routine Drawer / Modal (SCREEN_15) -->
+<div class="fixed inset-0 z-50 overflow-y-auto bg-surface text-on-surface flex-col min-h-screen select-none hidden" id="routineModal"><div class="flex flex-col w-full min-h-screen text-on-surface select-none pb-10 mx-auto max-w-md keep-all bg-surface"><div class="flex items-center justify-between px-5 py-4 w-full bg-surface-container-lowest/90 backdrop-blur-md sticky top-0 z-30 border-b border-outline-variant/30"><button aria-label="닫기" class="w-10 h-10 rounded-full flex items-center justify-center bg-surface-container active:bg-surface-container-high transition-colors text-on-surface-variant cursor-pointer" onclick="closeSosView()" type="button"><span class="material-symbols-outlined text-[20px]">close</span></button><div class="flex items-center gap-2 px-3.5 py-1.5 rounded-full bg-surface-container-low shadow-sm border border-outline-variant/30"><span class="relative flex h-2 w-2"><span class="animate-ping absolute inline-flex h-full w-full rounded-full bg-primary opacity-60"></span><span class="relative inline-flex rounded-full h-2 w-2 bg-primary"></span></span><span class="font-label-sm text-label-sm text-primary tracking-wide font-semibold">1분 긴급 탈출 진행 중</span></div><button aria-label="묵상 음원 토글" class="w-10 h-10 rounded-full flex items-center justify-center bg-surface-container active:bg-surface-container-high transition-colors text-on-surface-variant cursor-pointer" id="sosAudioToggleBtn" onclick="toggleAudio(this)" type="button"><span class="material-symbols-outlined text-[20px]" id="sosAudioIcon">volume_up</span></button></div><div class="flex flex-col px-5 pt-3 gap-6"><div class="flex flex-col items-center justify-center pt-2"><div class="relative w-64 h-64 flex items-center justify-center"><div class="absolute inset-2 rounded-full bg-surface-container-lowest"></div><svg class="w-full h-full -rotate-90 transform" viewBox="0 0 240 240"><circle cx="120" cy="120" fill="transparent" r="102" stroke="#282a29" stroke-width="4"></circle><circle class="transition-all duration-1000 ease-linear" cx="120" cy="120" fill="transparent" id="sosCountdownProgress" r="102" stroke="#5af0b3" stroke-dasharray="640.88" stroke-dashoffset="60" stroke-linecap="round" stroke-width="5" style="stroke-dashoffset: 566.115;"></circle></svg><div class="absolute w-44 h-44 rounded-full bg-surface-container-low flex flex-col items-center justify-center transition-all duration-1000 scale-95 shadow-inner" id="sosBreathIndicator" style="transform: scale(1.02);"><span class="font-label-sm text-label-sm text-primary font-semibold tracking-wider mb-0.5" id="sosBreathPhase">숨 멈추기</span><span class="font-display-lg-mobile text-display-lg-mobile text-on-surface tracking-tight" id="sosTimerDisplay">00:53</span><span class="font-label-md text-label-md text-on-surface-variant/80 mt-0.5" data-complete-text="파도가 지나갔습니다" id="sosBreathGuide">1초간 평온히 유지</span><script>(function(){ const guide = document.getElementById('sosBreathGuide'); const phase = document.getElementById('sosBreathPhase'); if(phase && guide){ const obs = new MutationObserver(() => { if(phase.textContent.includes('평안히 승리') || (document.getElementById('sosTimerDisplay') && document.getElementById('sosTimerDisplay').textContent === '00:00')) { guide.textContent = '파도가 지나갔습니다'; } }); obs.observe(phase, { childList: true, characterData: true, subtree: true }); const timerEl = document.getElementById('sosTimerDisplay'); if(timerEl){ obs.observe(timerEl, { childList: true, characterData: true, subtree: true }); } } })();</script></div></div><div class="text-center mt-3"><p class="font-headline-md text-headline-md text-on-surface font-semibold">파도가 지나갈 때까지</p><p class="font-body-sm text-body-sm text-on-surface-variant mt-1 leading-relaxed"><span style="letter-spacing: 0.13px;">주님의 평안 안에서 마음과 생각을 지키십시오.</span><br style="--tw-border-spacing-x: 0; --tw-border-spacing-y: 0; --tw-translate-x: 0; --tw-translate-y: 0; --tw-rotate: 0; --tw-skew-x: 0; --tw-skew-y: 0; --tw-scale-x: 1; --tw-scale-y: 1; --tw-pan-x: ; --tw-pan-y: ; --tw-pinch-zoom: ; --tw-scroll-snap-strictness: proximity; --tw-gradient-from-position: ; --tw-gradient-via-position: ; --tw-gradient-to-position: ; --tw-ordinal: ; --tw-slashed-zero: ; --tw-numeric-figure: ; --tw-numeric-spacing: ; --tw-numeric-fraction: ; --tw-ring-inset: ; --tw-ring-offset-width: 0px; --tw-ring-offset-color: #fff; --tw-ring-color: rgb(59 130 246 / 0.5); --tw-ring-offset-shadow: 0 0 #0000; --tw-ring-shadow: 0 0 #0000; --tw-shadow: 0 0 #0000; --tw-shadow-colored: 0 0 #0000; --tw-blur: ; --tw-brightness: ; --tw-contrast: ; --tw-grayscale: ; --tw-hue-rotate: ; --tw-invert: ; --tw-saturate: ; --tw-sepia: ; --tw-drop-shadow: ; --tw-backdrop-blur: ; --tw-backdrop-brightness: ; --tw-backdrop-contrast: ; --tw-backdrop-grayscale: ; --tw-backdrop-hue-rotate: ; --tw-backdrop-invert: ; --tw-backdrop-opacity: ; --tw-backdrop-saturate: ; --tw-backdrop-sepia: ; --tw-contain-size: ; --tw-contain-layout: ; --tw-contain-paint: ; --tw-contain-style: ; letter-spacing: 0.13px;"><span class="text-primary font-medium" style="--tw-border-spacing-x: 0; --tw-border-spacing-y: 0; --tw-translate-x: 0; --tw-translate-y: 0; --tw-rotate: 0; --tw-skew-x: 0; --tw-skew-y: 0; --tw-scale-x: 1; --tw-scale-y: 1; --tw-pan-x: ; --tw-pan-y: ; --tw-pinch-zoom: ; --tw-scroll-snap-strictness: proximity; --tw-gradient-from-position: ; --tw-gradient-via-position: ; --tw-gradient-to-position: ; --tw-ordinal: ; --tw-slashed-zero: ; --tw-numeric-figure: ; --tw-numeric-spacing: ; --tw-numeric-fraction: ; --tw-ring-inset: ; --tw-ring-offset-width: 0px; --tw-ring-offset-color: #fff; --tw-ring-color: rgb(59 130 246 / 0.5); --tw-ring-offset-shadow: 0 0 #0000; --tw-ring-shadow: 0 0 #0000; --tw-shadow: 0 0 #0000; --tw-shadow-colored: 0 0 #0000; --tw-blur: ; --tw-brightness: ; --tw-contrast: ; --tw-grayscale: ; --tw-hue-rotate: ; --tw-invert: ; --tw-saturate: ; --tw-sepia: ; --tw-drop-shadow: ; --tw-backdrop-blur: ; --tw-backdrop-brightness: ; --tw-backdrop-contrast: ; --tw-backdrop-grayscale: ; --tw-backdrop-hue-rotate: ; --tw-backdrop-invert: ; --tw-backdrop-opacity: ; --tw-backdrop-saturate: ; --tw-backdrop-sepia: ; --tw-contain-size: ; --tw-contain-layout: ; --tw-contain-paint: ; --tw-contain-style: ; --tw-text-opacity: 1; color: rgb(90, 240, 179); letter-spacing: 0.13px;">호흡을 고르고 말씀을 바라보세요.</span></p></div><div class="flex items-center gap-2 mt-3 px-3.5 py-1.5 rounded-full bg-surface-container-low border border-outline-variant/30"><span class="font-label-sm text-label-sm text-primary font-medium"><font color="#bbcac0"><b>들이마시기 4초</b></font></span><span class="text-on-surface-variant/40 font-label-sm">•</span><span class="font-label-sm text-label-sm text-on-surface-variant">멈추기 4초</span><span class="text-on-surface-variant/40 font-label-sm">•</span><span class="font-label-sm text-label-sm text-on-surface-variant">내쉬기 4초</span></div></div><div class="relative rounded-xl overflow-hidden p-5 flex flex-col justify-end min-h-[140px] bg-gradient-to-br from-[#1e2e24] via-[#15231c] to-surface-container-lowest border border-outline-variant/40 shadow-sm"><div class="absolute inset-0 bg-black/40 backdrop-blur-[1px]"></div><div class="relative z-10 flex flex-col gap-1"><div class="inline-flex items-center gap-1.5 px-2 py-0.5 rounded bg-primary/20 text-primary font-label-sm text-label-sm font-semibold w-fit"><span class="material-symbols-outlined text-[15px]">forest</span><span>약속의 피난처</span></div><h3 class="font-headline-md text-headline-md text-white font-bold tracking-tight mt-1">지금 하나님께서 피할 길을 내고 계십니다</h3><p class="font-body-sm text-body-sm text-[#bbcac0]">광야에 길을 내시며 사막에 강을 내시는 주님을 바라보십시오.</p></div></div><div class="flex flex-col gap-2"><div class="flex items-center justify-between px-1"><h2 class="font-label-lg text-label-lg text-on-surface font-semibold tracking-tight">즉각 행동 지침 (3-Action Protocol)</h2><span class="font-label-sm text-label-sm text-primary font-semibold" id="sosStepCounter">1 / 3 완료</span></div><div class="flex flex-col bg-surface-container-low rounded-xl overflow-hidden divide-y divide-surface-container-highest/20 border border-outline-variant/30"><div class="step-item group flex items-start gap-3.5 p-4 bg-surface-container-low active:bg-surface-container transition-colors cursor-pointer" onclick="toggleStep(this)"><div class="checkbox-box mt-0.5 w-6 h-6 rounded-md bg-primary flex items-center justify-center shrink-0 transition-all"><span class="material-symbols-outlined text-[16px] text-on-primary font-bold">check</span></div><div class="flex flex-col min-w-0 flex-1"><span class="font-body-md text-body-md text-on-surface font-medium line-through opacity-80">스마트폰을 시야 밖으로 뒤집어놓고 기립하기</span><span class="font-body-sm text-body-sm text-on-surface-variant mt-0.5">자리 박차고 일어나 공간의 흐름을 단절하세요.</span></div></div><div class="step-item group flex items-start gap-3.5 p-4 bg-surface-container-low active:bg-surface-container transition-colors cursor-pointer" onclick="toggleStep(this)"><div class="checkbox-box mt-0.5 w-6 h-6 rounded-md bg-surface-container flex items-center justify-center shrink-0 transition-all"><span class="material-symbols-outlined text-[16px] text-on-primary font-bold opacity-0 transition-opacity">check</span></div><div class="flex flex-col min-w-0 flex-1"><span class="font-body-md text-body-md text-on-surface font-medium">찬물로 세수하고 차가운 감각에 집중하기</span><span class="font-body-sm text-body-sm text-on-surface-variant mt-0.5">얼굴에 찬물을 끼얹어 뇌의 미주신경을 즉각 재부팅합니다.</span></div></div><div class="step-item group flex items-start gap-3.5 p-4 bg-surface-container-low active:bg-surface-container transition-colors cursor-pointer" onclick="toggleStep(this)"><div class="checkbox-box mt-0.5 w-6 h-6 rounded-md bg-surface-container flex items-center justify-center shrink-0 transition-all"><span class="material-symbols-outlined text-[16px] text-on-primary font-bold opacity-0 transition-opacity">check</span></div><div class="flex flex-col min-w-0 flex-1"><span class="font-body-md text-body-md text-on-surface font-medium">입술로 담대히 믿음의 선포 기도하기</span><span class="font-body-sm text-body-sm text-on-surface-variant mt-0.5">소리 내어 성령의 검인 말씀의 권세를 선포하세요.</span></div></div></div></div><div class="rounded-xl bg-surface-container-lowest p-4 flex flex-col gap-2 border border-outline-variant/30"><div class="flex items-center gap-1.5 text-primary"><span class="material-symbols-outlined text-[18px] text-primary">shield</span><span class="font-label-md text-label-md font-semibold">생명의 방패 말씀 (고린도전서 10:13)</span></div><p class="font-body-sm text-body-sm text-[#e2e3e0] leading-relaxed italic">“사람이 감당할 시험 밖에는 너희가 당한 것이 없나니 오직 하나님은 미쁘사 너희가 감당하지 못할 시험 당함을 허락하지 아니하시고, 시험 당할 즈음에 또한 피할 길을 내사 너희로 능히 감당하게 하시느니라.”</p></div><div class="rounded-xl bg-primary/10 border border-primary/30 p-4 flex flex-col gap-2"><div class="flex items-center gap-1.5 text-primary"><span class="material-symbols-outlined text-[18px] text-primary">campaign</span><span class="font-label-sm text-label-sm font-bold text-primary">소리 내어 선포할 승리의 외침</span></div><p class="font-body-md text-body-md font-semibold text-white leading-relaxed">“나는 그리스도의 피 값으로 산 거룩한 성전이다! 음란과 정욕의 헛된 파도는 예수 그리스도의 이름으로 지금 물러갈지어다!”</p></div><div class="flex flex-col gap-3 pt-2"><button class="w-full h-14 rounded-xl bg-primary hover:bg-[#45dfa4] active:brightness-105 transition-all active:scale-[0.99] flex items-center justify-center gap-2 text-on-primary font-label-lg text-label-lg font-bold shadow-md cursor-pointer" onclick="victorySos()" type="button"><span class="material-symbols-outlined text-[20px]">verified</span><span>위기를 넘겼습니다 (승리 확정)</span></button><button class="w-full py-3.5 px-4 rounded-xl bg-surface-container hover:bg-surface-container-high border border-outline-variant/40 active:scale-[0.99] transition-all flex items-center justify-center gap-2 text-primary font-label-md text-label-md font-semibold cursor-pointer" onclick="triggerSosRequest(this)" type="button"><span class="material-symbols-outlined text-[18px]">volunteer_activism</span><span>동행자들에게 무언의 1초 중보 SOS 보내기</span></button><p class="text-center text-xs text-on-surface-variant/80 px-2 leading-relaxed">당신은 혼자가 아닙니다. 수많은 거룩한 전사들이 지금 이 순간 함께 싸우고 있습니다.</p></div></div></div></div>
+<!-- Prescription Detail Bottom Sheet Modal -->
+<div class="fixed inset-0 bg-black/75 backdrop-blur-sm flex items-end justify-center z-[70] hidden" id="prescriptionModal">
+<div class="w-full max-w-md bg-surface-container-high rounded-t-2xl p-5 flex flex-col gap-4 border-t border-outline-variant/40 shadow-xl max-h-[90vh] overflow-y-auto keep-all pb-16">
+<div class="w-12 h-1 bg-outline-variant rounded-full mx-auto mb-1 shrink-0 cursor-pointer" onclick="closePrescription()"></div>
+<div class="flex items-start justify-between">
+<div class="flex flex-col gap-1">
+<div class="inline-flex items-center gap-1.5 px-2.5 py-0.5 rounded-md bg-primary/10 text-primary font-label-sm text-label-sm font-semibold tracking-wide w-fit">
+<svg class="w-3.5 h-3.5 text-primary shrink-0" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" viewBox="0 0 24 24"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"></path></svg>
+<span id="prescTag">번아웃 • 도파민 갈망</span>
+</div>
+<h3 class="font-headline-md text-headline-md text-on-surface font-semibold mt-1 tracking-tight" id="prescTitle">영적 무기력</h3>
+</div>
+<button class="text-on-surface-variant hover:text-on-surface p-1 rounded-full transition-colors" onclick="closePrescription()" title="닫기">
+<svg class="w-5 h-5" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" viewBox="0 0 24 24"><line x1="18" x2="6" y1="6" y2="18"></line><line x1="6" x2="18" y1="6" y2="18"></line></svg>
+</button>
+</div>
+<div class="rounded-xl bg-surface-container-lowest p-4 flex flex-col gap-2 border border-outline-variant/30">
+<div class="flex items-center gap-1.5 text-primary">
+<svg class="w-4 h-4 text-primary shrink-0" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" viewBox="0 0 24 24"><path d="M2 3h6a4 4 0 0 1 4 4v14a3 3 0 0 0-3-3H2z"></path><path d="M22 3h-6a4 4 0 0 0-4 4v14a3 3 0 0 1 3-3h7z"></path></svg>
+<span class="font-label-md text-label-md font-semibold" id="prescVerseRef">빌립보서 4:13 &amp; 시편 42:5</span>
+</div>
+<p class="font-body-md text-body-md text-on-surface italic leading-relaxed" id="prescVerseContent">“내게 능력 주시는 자 안에서 내가 모든 것을 할 수 있느니라.”</p>
+</div>
+<div class="rounded-xl bg-surface-container-low p-4 flex flex-col gap-2 border border-outline-variant/30">
+<div class="flex items-center gap-1.5 text-secondary">
+<span class="font-label-sm text-label-sm font-semibold text-on-surface">영적 처방 가이드</span>
+</div>
+<p class="font-body-sm text-body-sm text-on-surface-variant leading-relaxed" id="prescGuide">마음이 지치고 무기력할 때 뇌는 손쉬운 가짜 도파민을 갈망합니다. 억지로 싸우려 하지 말고, 생명수가 되시는 주님 품에 기대어 영의 호흡을 되찾으십시오.</p>
+</div>
+<div class="rounded-xl bg-primary/10 border border-primary/30 p-4 flex flex-col gap-2">
+<span class="font-label-sm text-label-sm font-bold text-primary">지금 입술로 외치는 선포 결단문</span>
+<p class="font-body-sm text-body-sm font-semibold text-white leading-relaxed" id="prescDeclaration">“나의 영혼을 소성케 하시는 주님을 바라봅니다. 세상의 거짓된 쾌락이 아닌 영원한 생명수로 나의 빈 잔을 채우소서!”</p>
+</div>
+<div class="flex flex-col gap-2 pt-1">
+<button class="w-full py-3.5 rounded-xl bg-primary text-on-primary font-label-lg text-label-lg font-bold flex items-center justify-center gap-2 hover:opacity-90 active:scale-[0.98] transition-all shadow-md" onclick="declarePrescription()">
+<span>입술로 소리 내어 선포하기</span>
+</button>
+</div>
+</div>
+</div><!-- Community Write Bottom Sheet Modal (#writeModal) -->
+<div class="fixed inset-0 bg-black/75 backdrop-blur-sm flex items-end justify-center z-[70] hidden" id="writeModal">
+<div class="w-full max-w-md bg-surface-container-high rounded-t-2xl p-5 flex flex-col gap-4 border-t border-outline-variant/40 shadow-xl max-h-[90vh] overflow-y-auto keep-all pb-16">
+<div class="w-12 h-1 bg-outline-variant rounded-full mx-auto mb-1 shrink-0 cursor-pointer" onclick="closeWriteModal()"></div>
+<div class="flex items-start justify-between">
+<div class="flex flex-col gap-1">
+<div class="inline-flex items-center gap-1.5 px-2.5 py-0.5 rounded-md bg-primary/10 text-primary font-label-sm text-label-sm font-semibold tracking-wide w-fit">
+<svg class="w-3.5 h-3.5 text-primary shrink-0" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" viewBox="0 0 24 24"><path d="M12 20h9"></path><path d="M16.5 3.5a2.121 2.121 0 0 1 3 3L7 19l-4 1 1-4L16.5 3.5z"></path></svg>
+<span>동행자 나눔터</span>
+</div>
+<h3 class="font-headline-md text-headline-md text-on-surface font-semibold mt-1 tracking-tight">승리 간증 및 중보 요청</h3>
+</div>
+<button class="text-on-surface-variant hover:text-on-surface p-1 rounded-full transition-colors cursor-pointer" onclick="closeWriteModal()" title="닫기" type="button">
+<svg class="w-5 h-5" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" viewBox="0 0 24 24"><line x1="18" x2="6" y1="6" y2="18"></line><line x1="6" x2="18" y1="6" y2="18"></line></svg>
+</button>
+</div>
+<div class="flex flex-col gap-1.5">
+<label class="font-label-md text-label-md text-on-surface-variant" for="write-category-select">나눔 주제</label>
+<div class="grid grid-cols-3 gap-2">
+<button class="py-2 px-2.5 rounded-lg border border-primary/40 bg-primary/10 text-primary font-label-sm text-label-sm font-medium text-center" type="button">승리 간증</button>
+<button class="py-2 px-2.5 rounded-lg border border-outline-variant/30 bg-surface-container text-on-surface-variant font-label-sm text-label-sm font-medium text-center hover:text-on-surface" type="button">중보 요청</button>
+<button class="py-2 px-2.5 rounded-lg border border-outline-variant/30 bg-surface-container text-on-surface-variant font-label-sm text-label-sm font-medium text-center hover:text-on-surface" type="button">취침 결단</button>
+</div>
+</div>
+<div class="flex flex-col gap-1.5">
+<label class="font-label-md text-label-md text-on-surface-variant" for="write-content-input">은혜의 고백 (익명 보장)</label>
+<textarea class="w-full bg-surface-container-lowest border border-outline-variant/40 focus:border-primary focus:outline-none rounded-xl p-3.5 text-on-surface font-body-sm text-body-sm placeholder:text-on-surface-variant/50 leading-relaxed resize-none h-32" id="write-content-input" placeholder="유혹을 이겨낸 은혜의 순간이나, 지금 긴급한 기도가 필요한 사연을 적어주세요. 주님의 이름으로 함께 기도합니다."></textarea>
+</div>
+<div class="rounded-xl bg-surface-container-lowest p-3.5 flex items-center justify-between border border-outline-variant/30">
+<div class="flex items-center gap-2">
+<svg class="w-4 h-4 text-primary shrink-0" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" viewBox="0 0 24 24"><rect height="11" rx="2" ry="2" width="18" x="3" y="11"></rect><path d="M7 11V7a5 5 0 0 1 10 0v4"></path></svg>
+<span class="font-label-sm text-label-sm text-on-surface-variant">닉네임은 익명(성도)으로 안전하게 보호됩니다.</span>
+</div>
+</div>
+<div class="flex flex-col gap-2 pt-1">
+<button class="w-full py-3.5 rounded-xl bg-primary text-on-primary font-label-lg text-label-lg font-bold flex items-center justify-center gap-2 hover:opacity-90 active:scale-[0.98] transition-all shadow-md cursor-pointer" onclick="submitWriteModal()" type="button">
+<span>동행자들에게 은혜 나눔 올리기</span>
+</button>
+<button class="w-full py-2.5 text-on-surface-variant hover:text-on-surface font-label-md text-label-md text-center transition-colors cursor-pointer" onclick="closeWriteModal()" type="button">닫기</button>
+</div>
+</div>
+</div>
+<!-- Toast Message -->
+<div class="fixed bottom-20 inset-x-6 z-50 p-3 rounded-lg bg-surface-container-highest text-on-surface text-center font-label-md text-label-md shadow-lg transition-all duration-300 hidden" id="toastMessage">선포 완료! 말씀의 권능으로 유혹을 물리쳤습니다.</div><!-- Profile & Settings Fullscreen Overlay (SCREEN_5) --><div class="fixed inset-0 z-50 bg-[#121413] text-on-surface overflow-y-auto select-none min-h-screen flex-col hidden" id="profileOverlayView" style="display: none;"><header class="fixed top-0 inset-x-0 z-50 bg-surface/85 backdrop-blur-xl pt-safe shadow-[0_1px_8px_rgba(0,0,0,0.04)]"><div class="h-16 px-margin flex items-center justify-between max-w-md mx-auto"><div class="flex items-center gap-space-xs"><button aria-label="뒤로 가기" class="w-10 h-10 flex items-center justify-center -ml-2 rounded-xl text-on-surface hover:bg-surface-container/40 active:scale-95 transition-colors cursor-pointer" onclick="closeProfileView()" type="button" id="profile-back-btn"><span class="material-symbols-outlined text-[24px]">arrow_back</span></button><div class="flex items-center gap-space-xs"><span class="font-headline-md text-headline-md text-on-surface">내 프로필 및 설정</span></div></div><div class="flex items-center gap-space-xs"><span class="w-2 h-2 rounded-full bg-primary-container inline-block"></span><span class="text-on-surface-variant font-label-sm text-label-sm tracking-normal">은혜의 성소</span></div></div></header><main class="flex flex-col relative w-full pt-16 px-margin bg-surface pb-safe max-w-md mx-auto"><div class="flex flex-col w-full gap-space-lg pt-2 pb-10"><!-- Profile Identity Card --><section class="bg-surface-container-low rounded-xl p-space-md flex flex-col gap-space-md"><div class="flex items-start gap-space-md"><div class="relative shrink-0"><div class="w-16 h-16 rounded-full overflow-hidden bg-surface-container-high border border-outline-variant/30 flex items-center justify-center"><img class="w-full h-full object-cover" data-alt="A serene close-up portrait" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDWAo2TWP6elMRrIALeKvZRF2HkCeRvXoN3kXmY836cbKzOG1yVc6jG9IrFZZks4iL4m66GCcq9rJd97hTXrdtaD2KOUnDSqpP1om8b-K_UtVqr--Odhigs54uKsBRTzSH_byo47o56xZvQrNCzgTWsF-3a3q_XxPtNhI8vl7YRsO8czgSGUo71cfhTZnNCFpIXKUAIPNJqvyJ4dPPgClQdrEUo5_JyPj3drRzVjTJt"></div><button aria-label="프로필 사진 수정" class="absolute -bottom-0.5 -right-0.5 w-6 h-6 rounded-full bg-surface-container-high border border-outline-variant/40 text-on-surface-variant hover:text-on-surface flex items-center justify-center shadow-sm active:scale-95 transition-all"><svg class="w-3.5 h-3.5" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.75" viewBox="0 0 24 24"><path d="M23 19a2 2 0 0 1-2 2H3a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h4l2-3h6l2 3h4a2 2 0 0 1 2 2z"></path><circle cx="12" cy="13" r="4"></circle></svg></button></div><div class="flex flex-col min-w-0 flex-1"><div class="flex items-center gap-2 flex-wrap"><button aria-label="닉네임 변경" class="group flex items-center gap-1.5 -ml-1 px-1.5 py-0.5 rounded-lg hover:bg-surface-container/60 active:bg-surface-container active:scale-[0.98] transition-all text-left" id="open-nickname-modal-btn" onclick="openNicknameModal()" type="button"><h2 class="font-headline-md text-headline-md text-on-surface group-hover:text-primary transition-colors truncate" id="user-nickname-display">동행자</h2><svg class="w-4 h-4 text-on-surface-variant/70 group-hover:text-primary transition-colors shrink-0" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.75" viewBox="0 0 24 24"><path d="M11 4H4a2 2 0 0 0-2 2v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2v-7"></path><path d="M18.5 2.5a2.121 2.121 0 0 1 3 3L12 15l-4 1 1-4 9.5-9.5z"></path></svg></button><span class="inline-flex items-center gap-1.5 px-2 py-0.5 rounded-full bg-primary-container/15 text-primary font-label-sm text-[11px]"><span class="w-1.5 h-1.5 rounded-full bg-primary inline-block"></span>동행 30일차</span></div><div class="flex items-center gap-1.5 mt-1"><button aria-label="신앙 칭호 변경" class="inline-flex items-center gap-1.5 px-2.5 py-1 rounded-lg bg-surface-container/60 hover:bg-surface-container active:scale-[0.98] border border-outline-variant/20 transition-all text-left cursor-pointer" id="open-title-modal-btn" onclick="openTitleModal()" type="button"><svg class="w-3.5 h-3.5 text-primary shrink-0" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.75" viewBox="0 0 24 24"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"></polygon></svg><span class="font-label-sm text-[12px] text-on-surface font-medium" id="current-title-badge-text">칭호 · 동행자</span><span class="font-label-sm text-[10px] text-tertiary-container bg-tertiary-container/15 px-1.5 py-0.2 rounded font-medium">장착 중</span><svg class="w-3.5 h-3.5 text-on-surface-variant/60 ml-0.5" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" viewBox="0 0 24 24"><polyline points="9 18 15 12 9 6"></polyline></svg></button></div><div class="flex items-center gap-1.5 mt-1.5 text-on-surface-variant font-label-sm text-[12px]"><svg class="w-3.5 h-3.5 text-on-surface-variant/70 shrink-0" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.75" viewBox="0 0 24 24"><rect height="11" rx="2" ry="2" width="18" x="3" y="11"></rect><path d="M7 11V7a5 5 0 0 1 10 0v4"></path></svg><span class="truncate text-on-surface-variant/80">user@sanctuary.kr · Apple 계정 연동</span></div></div></div></section><!-- Purity & Streak Summary Stats (3-column) --><section class="grid grid-cols-3 gap-space-xs bg-surface-container-low rounded-xl p-space-md"><div class="flex flex-col items-center text-center p-space-xs"><div class="w-8 h-8 rounded-full bg-surface-container-high flex items-center justify-center text-primary mb-1.5"><svg class="w-4 h-4" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.75" viewBox="0 0 24 24"><path d="M8.5 14.5A2.5 2.5 0 0 0 11 12c0-1.38-.5-2-1-3-1.072-2.143-.224-4.054 2-6 .5 2.5 2 4.9 4 6.5 2 1.6 3 3.5 3 5.5a7 7 0 1 1-14 0c0-1.153.433-2.294 1-3a2.5 2.5 0 0 0 2.5 3z"></path></svg></div><span class="font-label-sm text-[12px] text-on-surface-variant">현재 연속 승리</span><div class="flex items-baseline gap-0.5 mt-1"><span class="font-headline-md text-headline-md text-on-surface font-semibold">30</span><span class="font-label-sm text-[11px] text-primary font-medium">일</span></div></div><div class="flex flex-col items-center text-center p-space-xs bg-surface-container/40 rounded-lg"><div class="w-8 h-8 rounded-full bg-surface-container-high flex items-center justify-center text-secondary mb-1.5"><svg class="w-4 h-4" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.75" viewBox="0 0 24 24"><circle cx="12" cy="12" r="10"></circle><polyline points="12 6 12 12 16 14"></polyline></svg></div><span class="font-label-sm text-[12px] text-on-surface-variant">누적 정결 시간</span><div class="flex items-baseline gap-0.5 mt-1"><span class="font-headline-md text-headline-md text-on-surface font-semibold">720</span><span class="font-label-sm text-[11px] text-secondary font-medium">h</span></div></div><div class="flex flex-col items-center text-center p-space-xs"><div class="w-8 h-8 rounded-full bg-surface-container-high flex items-center justify-center text-tertiary-container mb-1.5"><svg class="w-4 h-4" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.75" viewBox="0 0 24 24"><path d="M4 15s1-1 4-1 5 2 8 2 4-1 4-1V3s-1 1-4 1-5-2-8-2-4 1-4 1z"></path><line x1="4" x2="4" y1="22" y2="15"></line></svg></div><span class="font-label-sm text-[12px] text-on-surface-variant">목표 달성률</span><div class="flex items-baseline gap-0.5 mt-1"><span class="font-headline-md text-headline-md text-on-surface font-semibold">33.3</span><span class="font-label-sm text-[11px] text-tertiary-container font-medium">%</span></div></div></section><!-- Streak & Journey Management Card --><section class="flex flex-col gap-space-xs"><div class="flex items-center justify-between px-space-xs"><span class="font-label-lg text-label-lg text-on-surface font-medium flex items-center gap-1.5"><svg class="w-4 h-4 text-primary shrink-0" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.75" viewBox="0 0 24 24"><polyline points="16 3 21 3 21 8"></polyline><line x1="4" x2="21" y1="20" y2="3"></line><polyline points="21 16 21 21 16 21"></polyline><line x1="15" x2="21" y1="15" y2="21"></line><line x1="4" x2="9" y1="4" y2="9"></line></svg>여정 및 스트릭 관리</span><span class="font-label-sm text-[11px] text-on-surface-variant/70 font-medium">Plan A 모드</span></div><div class="bg-surface-container-low rounded-xl overflow-hidden flex flex-col"><div class="px-space-md py-space-sm bg-surface-container/50 border-b border-outline-variant/20 flex items-center gap-space-sm text-on-surface-variant"><svg class="w-4 h-4 text-primary shrink-0" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.75" viewBox="0 0 24 24"><circle cx="12" cy="12" r="10"></circle><line x1="12" x2="12" y1="16" y2="12"></line><line x1="12" x2="12.01" y1="8" y2="8"></line></svg><p class="font-body-sm text-[12px] leading-snug text-on-surface-variant">간편 스트릭 재설정은 홈 요약 카드의 <span class="text-on-surface font-semibold">···</span> 메뉴에서도 가능합니다.</p></div><button class="w-full px-space-md py-3.5 flex items-center justify-between hover:bg-surface-container/40 active:bg-surface-container transition-colors text-left"><div class="flex items-center gap-space-sm"><svg class="w-4 h-4 text-on-surface-variant shrink-0" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.75" viewBox="0 0 24 24"><rect height="18" rx="2" ry="2" width="18" x="3" y="4"></rect><line x1="16" x2="16" y1="2" y2="6"></line><line x1="8" x2="8" y1="2" y2="6"></line><line x1="3" x2="21" y1="10" y2="10"></line></svg><span class="font-body-md text-body-md text-on-surface">시작일 변경</span></div><div class="flex items-center gap-1.5 text-on-surface-variant font-label-md text-label-md"><span class="text-on-surface-variant/90">2024. 09. 13</span><svg class="w-3.5 h-3.5 text-on-surface-variant/60" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" viewBox="0 0 24 24"><polyline points="9 18 15 12 9 6"></polyline></svg></div></button><button class="w-full px-space-md py-3.5 flex items-center justify-between hover:bg-surface-container/40 active:bg-surface-container transition-colors text-left bg-surface-container-low border-t border-outline-variant/15"><div class="flex items-center gap-space-sm"><svg class="w-4 h-4 text-on-surface-variant shrink-0" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.75" viewBox="0 0 24 24"><circle cx="12" cy="12" r="10"></circle><circle cx="12" cy="12" r="6"></circle><circle cx="12" cy="12" r="2"></circle></svg><span class="font-body-md text-body-md text-on-surface">목표 일수 설정</span></div><div class="flex items-center gap-1.5 text-primary font-label-md text-label-md"><span class="font-medium">90일 작정 중</span><svg class="w-3.5 h-3.5 text-on-surface-variant/60" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" viewBox="0 0 24 24"><polyline points="9 18 15 12 9 6"></polyline></svg></div></button><button class="w-full px-space-md py-3.5 flex items-center justify-between hover:bg-surface-container/40 active:bg-surface-container transition-colors text-left border-t border-outline-variant/15" onclick="document.getElementById('grace-modal').classList.remove('hidden')"><div class="flex flex-col min-w-0 pr-2"><div class="flex items-center gap-2"><svg class="w-4 h-4 text-tertiary-container shrink-0" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.75" viewBox="0 0 24 24"><polyline points="1 4 1 10 7 10"></polyline><path d="M3.51 15a9 9 0 1 0 2.13-9.36L1 10"></path></svg><span class="font-body-md text-body-md text-on-surface">스트릭 재설정 및 회개</span><span class="px-1.5 py-0.2 rounded bg-tertiary-container/15 text-tertiary font-label-sm text-[10px] font-medium">새 출발</span></div><span class="font-body-sm text-[12px] text-on-surface-variant/75 pl-6 mt-0.5 truncate">넘어짐 고백 및 새로운 은혜로 시작</span></div><svg class="w-3.5 h-3.5 text-on-surface-variant/60 shrink-0" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" viewBox="0 0 24 24"><polyline points="9 18 15 12 9 6"></polyline></svg></button><button class="w-full px-space-md py-3.5 flex items-center justify-between hover:bg-surface-container/40 active:bg-surface-container transition-colors text-left border-t border-outline-variant/15"><div class="flex items-center gap-space-sm"><svg class="w-4 h-4 text-on-surface-variant shrink-0" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.75" viewBox="0 0 24 24"><path d="M18 10h-1.26A8 8 0 1 0 9 20h9a5 5 0 0 0 0-10z"></path></svg><span class="font-body-md text-body-md text-on-surface">기록 히스토리 및 백업</span></div><div class="flex items-center gap-1.5 text-on-surface-variant font-label-md text-label-md"><span class="text-secondary font-label-sm text-[12px]">iCloud 연동됨</span><svg class="w-3.5 h-3.5 text-on-surface-variant/60" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" viewBox="0 0 24 24"><polyline points="9 18 15 12 9 6"></polyline></svg></div></button></div></section><!-- Spiritual Habits & Notification Settings Card --><section class="flex flex-col gap-space-xs"><div class="flex items-center justify-between px-space-xs"><span class="font-label-lg text-label-lg text-on-surface font-medium flex items-center gap-1.5"><svg class="w-4 h-4 text-primary shrink-0" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.75" viewBox="0 0 24 24"><path d="M18 8A6 6 0 0 0 6 8c0 7-3 9-3 9h18s-3-2-3-9"></path><path d="M13.73 21a2 2 0 0 1-3.46 0"></path></svg>경건 루틴 및 알림 설정</span><span class="font-label-sm text-[11px] text-primary font-medium">모두 활성</span></div><div class="bg-surface-container-low rounded-xl overflow-hidden flex flex-col"><div class="w-full px-space-md py-3.5 flex items-center justify-between"><div class="flex items-center gap-space-sm"><svg class="w-4 h-4 text-on-surface-variant shrink-0" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.75" viewBox="0 0 24 24"><circle cx="12" cy="12" r="5"></circle><line x1="12" x2="12" y1="1" y2="3"></line><line x1="12" x2="12" y1="21" y2="23"></line><line x1="4.22" x2="5.64" y1="4.22" y2="5.64"></line><line x1="18.36" x2="19.78" y1="18.36" y2="19.78"></line><line x1="1" x2="3" y1="12" y2="12"></line><line x1="21" x2="23" y1="12" y2="12"></line><line x1="4.22" x2="5.64" y1="19.78" y2="18.36"></line><line x1="18.36" x2="19.78" y1="5.64" y2="4.22"></line></svg><div class="flex flex-col"><span class="font-body-md text-body-md text-on-surface">아침 기도 알림</span><span class="font-label-sm text-[12px] text-on-surface-variant">오전 07:00</span></div></div><button aria-checked="true" class="w-11 h-6 rounded-full p-0.5 flex items-center transition-colors bg-primary-container switch-toggle-btn" role="switch" type="button"><span class="w-5 h-5 rounded-full bg-on-primary transform translate-x-5 transition-transform shadow-sm"></span></button></div><div class="w-full px-space-md py-3.5 flex items-center justify-between bg-surface-container/25 border-t border-outline-variant/15"><div class="flex items-center gap-space-sm"><svg class="w-4 h-4 text-on-surface-variant shrink-0" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.75" viewBox="0 0 24 24"><path d="M4 19.5A2.5 2.5 0 0 1 6.5 17H20"></path><path d="M6.5 2H20v20H6.5A2.5 2.5 0 0 1 4 19.5v-15A2.5 2.5 0 0 1 6.5 2z"></path></svg><div class="flex flex-col"><span class="font-body-md text-body-md text-on-surface">말씀 묵상 푸시</span><span class="font-label-sm text-[12px] text-on-surface-variant">오전 08:30</span></div></div><button aria-checked="true" class="w-11 h-6 rounded-full bg-primary-container p-0.5 flex items-center transition-colors switch-toggle-btn" role="switch" type="button"><span class="w-5 h-5 rounded-full bg-on-primary transform translate-x-5 transition-transform shadow-sm"></span></button></div><div class="w-full px-space-md py-3.5 flex items-center justify-between border-t border-outline-variant/15"><div class="flex items-center gap-space-sm"><svg class="w-4 h-4 text-on-surface-variant shrink-0" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.75" viewBox="0 0 24 24"><path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path></svg><div class="flex flex-col"><span class="font-body-md text-body-md text-on-surface">취침 전 결단 기도</span><span class="font-label-sm text-[12px] text-on-surface-variant">오후 10:30</span></div></div><button aria-checked="true" class="w-11 h-6 rounded-full bg-primary-container p-0.5 flex items-center transition-colors switch-toggle-btn" role="switch" type="button"><span class="w-5 h-5 rounded-full bg-on-primary transform translate-x-5 transition-transform shadow-sm"></span></button></div><div class="w-full px-space-md py-3.5 flex items-center justify-between bg-surface-container/25 border-t border-outline-variant/15"><div class="flex items-center gap-space-sm"><svg class="w-4 h-4 text-tertiary-container shrink-0" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.75" viewBox="0 0 24 24"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"></path></svg><div class="flex flex-col"><div class="flex items-center gap-1.5"><span class="font-body-md text-body-md text-on-surface">취약 시간대 긴급 은혜 방패</span><span class="px-1.5 py-0.2 rounded bg-tertiary-container/15 text-tertiary font-label-sm text-[10px] font-medium">보호</span></div><span class="font-label-sm text-[12px] text-on-surface-variant/80">오후 11:00 ~ 오전 02:00 (집중 중보)</span></div></div><button aria-checked="true" class="w-11 h-6 rounded-full p-0.5 flex items-center transition-colors bg-primary-container switch-toggle-btn" role="switch" type="button"><span class="w-5 h-5 rounded-full bg-on-primary transform translate-x-5 transition-transform shadow-sm"></span></button></div></div></section><!-- Security & Purity Shield Card --><section class="flex flex-col gap-space-xs"><div class="px-space-xs"><span class="font-label-lg text-label-lg text-on-surface font-medium flex items-center gap-1.5"><svg class="w-4 h-4 text-primary shrink-0" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.75" viewBox="0 0 24 24"><rect height="11" rx="2" ry="2" width="18" x="3" y="11"></rect><path d="M7 11V7a5 5 0 0 1 10 0v4"></path></svg>앱 보안 및 프라이버시 보호</span></div><div class="bg-surface-container-low rounded-xl overflow-hidden flex flex-col"><div class="w-full px-space-md py-3.5 flex items-center justify-between"><div class="flex items-center gap-space-sm"><svg class="w-4 h-4 text-on-surface-variant shrink-0" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.75" viewBox="0 0 24 24"><path d="M2 12C2 6.5 6.5 2 12 2a10 10 0 0 1 8 4"></path><path d="M5 19.5C5.5 18 6 15 6 12c0-.7.12-1.37.34-2"></path><path d="M17.29 21.02c.12-.6.2-1.22.2-1.85 0-3.32-2.69-6.02-6-6.02s-6 2.7-6 6.02c0 .35.03.7.09 1.04"></path><path d="M12 10a2 2 0 1 0 0-4 2 2 0 0 0 0 4z"></path><path d="M8.65 22A8.96 8.96 0 0 1 8 19c0-2.2 1.8-4 4-4s4 1.8 4 4c0 1.1-.45 2.1-1.17 2.83"></path></svg><span class="font-body-md text-body-md text-on-surface">생체 인증 (Face ID / 지문 잠금)</span></div><button aria-checked="true" class="w-11 h-6 rounded-full bg-primary-container p-0.5 flex items-center transition-colors switch-toggle-btn" role="switch" type="button"><span class="w-5 h-5 rounded-full bg-on-primary transform translate-x-5 transition-transform shadow-sm"></span></button></div><div class="w-full px-space-md py-3.5 flex items-center justify-between bg-surface-container/25 border-t border-outline-variant/15"><div class="flex items-center gap-space-sm"><svg class="w-4 h-4 text-on-surface-variant shrink-0" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.75" viewBox="0 0 24 24"><path d="M17.94 17.94A10.07 10.07 0 0 1 12 20c-7 0-11-8-11-8a18.45 18.45 0 0 1 5.06-5.94M9.9 4.24A9.12 9.12 0 0 1 12 4c7 0 11 8 11 8a18.5 18.5 0 0 1-2.16 3.19m-6.72-1.07a3 3 0 1 1-4.24-4.24"></path><line x1="1" x2="23" y1="1" y2="23"></line></svg><div class="flex flex-col"><span class="font-body-md text-body-md text-on-surface">화면 가리기</span><span class="font-label-sm text-[12px] text-on-surface-variant">앱 전환기 노출 시 블러 처리</span></div></div><button aria-checked="true" class="w-11 h-6 rounded-full bg-primary-container p-0.5 flex items-center transition-colors switch-toggle-btn" role="switch" type="button"><span class="w-5 h-5 rounded-full bg-on-primary transform translate-x-5 transition-transform shadow-sm"></span></button></div></div></section><!-- Devotional Quote & App Version Footer Card --><section class="bg-surface-container-lowest rounded-xl p-space-md flex flex-col items-center text-center gap-space-sm"><div class="flex items-center gap-2 opacity-50 mb-0.5"><span class="w-6 h-px bg-outline-variant"></span><svg class="w-3.5 h-3.5 text-primary" fill="currentColor" viewBox="0 0 24 24"><path d="M6.5 10c-.829 0-1.5.672-1.5 1.5s.671 1.5 1.5 1.5h1.768C7.575 14.887 6.136 16.425 4 17v2c3.314 0 6-2.686 6-6V10H6.5zm9 0c-.829 0-1.5.672-1.5 1.5s.671 1.5 1.5 1.5h1.768c-.693 1.887-2.132 3.425-4.268 4v2c3.314 0 6-2.686 6-6V10h-3.5z"></path></svg><span class="w-6 h-px bg-outline-variant"></span></div><blockquote class="font-body-md text-[14px] text-on-surface font-light leading-relaxed max-w-xs keep-all">“대저 의인은 일곱 번 넘어질지라도 다시 일어나려니와”</blockquote><cite class="font-label-sm text-[12px] text-primary not-italic tracking-wide font-medium">잠언 24장 16절</cite><div class="w-full pt-space-xs mt-space-xs border-t border-outline-variant/15 flex items-center justify-center gap-2 text-on-surface-variant font-label-sm text-[11px]"><span>은혜의 성소 (Sanctuary)</span><span class="text-outline-variant">•</span><span>v1.2.0 (최신 버전)</span></div></section></div></main></div><!-- Grace & Reset Modal --><div class="fixed inset-0 z-50 bg-background/80 backdrop-blur-md flex items-end sm:items-center justify-center p-space-margin hidden" id="grace-modal"><div class="bg-surface-container-low w-full max-w-md rounded-2xl p-space-lg flex flex-col gap-space-md shadow-2xl"><div class="flex items-center justify-between"><div class="flex items-center gap-space-xs text-tertiary"><span class="material-symbols-outlined text-[24px]">favorite</span><h3 class="font-headline-md text-headline-md text-on-surface">새로운 은혜의 시작</h3></div><button class="w-8 h-8 rounded-full bg-surface-container flex items-center justify-center text-on-surface-variant" onclick="document.getElementById('grace-modal').classList.add('hidden')"><span class="material-symbols-outlined text-[18px]">close</span></button></div><p class="font-body-md text-body-md text-on-surface-variant leading-relaxed keep-all">넘어짐은 정죄가 아닌, 다시 주님의 십자가 앞에 무릎 꿇는 은혜의 초대입니다. 정죄감에서 벗어나 오늘부터 다시 정결한 여정을 시작합니다.</p><div class="bg-surface-container-lowest p-space-md rounded-xl flex flex-col gap-1.5"><span class="font-label-sm text-label-sm text-on-surface-variant">현재 스트릭</span><div class="flex items-baseline gap-2"><span class="font-headline-lg-mobile text-headline-lg-mobile text-on-surface font-semibold">30일차</span><span class="text-tertiary font-label-md text-label-md">→ 1일차 새 서약으로 전환</span></div></div><div class="flex flex-col gap-2 mt-space-xs"><button class="w-full h-12 bg-primary-container text-on-primary font-label-lg text-label-lg font-semibold rounded-xl flex items-center justify-center gap-1 active:scale-[0.99] transition-transform" onclick="document.getElementById('grace-modal').classList.add('hidden'); showToast('새로운 은혜로 다시 1일차 결단을 시작합니다.');"><span class="material-symbols-outlined text-[18px]">autorenew</span>회개하고 다시 일어서기</button><button class="w-full h-10 bg-surface-container-high text-on-surface font-label-md text-label-md rounded-xl flex items-center justify-center transition-colors" onclick="document.getElementById('grace-modal').classList.add('hidden')">돌아가기</button></div></div></div><!-- Nickname Modal --><div class="fixed inset-0 z-50 bg-background/80 backdrop-blur-md flex items-end sm:items-center justify-center p-space-margin hidden" id="nickname-modal"><div class="bg-surface-container-low w-full max-w-md rounded-2xl p-space-lg flex flex-col gap-space-md shadow-2xl"><div class="flex items-center justify-between"><div class="flex items-center gap-space-xs text-primary"><span class="material-symbols-outlined text-[24px]">edit_square</span><h3 class="font-headline-md text-headline-md text-on-surface">닉네임 변경</h3></div><button class="w-8 h-8 rounded-full bg-surface-container flex items-center justify-center text-on-surface-variant hover:text-on-surface transition-colors" onclick="closeNicknameModal()"><span class="material-symbols-outlined text-[18px]">close</span></button></div><div class="flex flex-col gap-2"><label class="font-label-md text-label-md text-on-surface-variant" for="nickname-input">새 닉네임</label><div class="relative flex items-center"><input class="w-full bg-surface-container-lowest border border-outline-variant focus:border-primary focus:outline-none rounded-xl px-space-md py-3 text-on-surface text-body-md placeholder:text-on-surface-variant/50 transition-colors" id="nickname-input" maxlength="12" placeholder="새로운 닉네임을 입력하세요 (최대 12자)" type="text" value="동행자"><span class="absolute right-3 font-label-sm text-label-sm text-on-surface-variant/70" id="nickname-char-count">3/12</span></div><p class="font-body-sm text-[12px] text-on-surface-variant/80 pl-1">주님과 성도들 앞에서 불릴 거룩한 이름입니다</p></div><div class="flex items-center gap-2 mt-space-xs"><button class="flex-1 h-11 bg-surface-container-high text-on-surface font-label-md text-label-md rounded-xl flex items-center justify-center hover:bg-surface-container-highest transition-colors" onclick="closeNicknameModal()" type="button">취소</button><button class="flex-1 h-11 bg-primary-container text-on-primary font-label-md text-label-md font-semibold rounded-xl flex items-center justify-center gap-1 active:scale-[0.99] transition-transform shadow-sm" id="save-nickname-btn" onclick="saveNickname()" type="button">저장하기</button></div></div></div><!-- Faith Title Selection Modal (SCREEN_5) --><div class="fixed inset-0 z-50 bg-background/80 backdrop-blur-md flex items-end sm:items-center justify-center p-0 sm:p-space-margin transition-all duration-300 hidden" id="title-modal"><div class="bg-surface-container-low w-full max-w-md rounded-t-2xl sm:rounded-2xl p-space-md sm:p-space-lg flex flex-col gap-space-md shadow-2xl max-h-[90vh] overflow-hidden"><div class="flex items-start justify-between pb-2 border-b border-outline-variant/30"><div class="flex items-start gap-2.5"><div class="w-10 h-10 rounded-xl bg-primary-container/20 text-primary flex items-center justify-center shrink-0 mt-0.5"><span class="material-symbols-outlined text-[24px]">military_tech</span></div><div><h3 class="font-headline-md text-headline-md text-on-surface">신앙 칭호 선택</h3><p class="font-body-sm text-[12px] text-on-surface-variant mt-0.5 leading-snug">거룩한 동행의 여정에 따라 영적 칭호가 차례로 해금됩니다.</p></div></div><button class="w-8 h-8 rounded-full bg-surface-container flex items-center justify-center text-on-surface-variant hover:text-on-surface transition-colors shrink-0" onclick="closeTitleModal()" type="button"><span class="material-symbols-outlined text-[18px]">close</span></button></div><div class="flex flex-col gap-3 overflow-y-auto max-h-[58vh] pr-1"><div class="bg-surface-container-lowest/80 border border-primary/30 rounded-xl p-3 flex flex-col gap-1.5"><div class="flex items-center justify-between"><span class="font-label-sm text-[11px] text-on-surface-variant flex items-center gap-1">30일 이상 승리 달성 · 현재 30일째 동행</span><span class="px-1.5 py-0.5 rounded bg-tertiary-container/20 text-tertiary text-[10px] font-semibold">적용 중</span></div><div class="flex items-center gap-2.5"><span class="material-symbols-outlined text-[20px] text-primary">verified</span><div class="flex flex-col"><span class="font-label-lg text-label-lg text-primary font-semibold" id="equipped-title-preview">동행자</span><span class="font-body-sm text-[11px] text-on-surface-variant">30일 이상 승리 달성 · 현재 30일째 동행</span></div></div></div><div class="flex flex-col gap-2"><div class="text-label-sm font-semibold text-primary px-1 flex items-center gap-1"><span class="material-symbols-outlined text-[14px]">lock_open</span>해금된 칭호 선택</div><button class="title-option-item w-full p-space-sm rounded-xl bg-surface-container/40 hover:bg-surface-container flex items-center justify-between border border-transparent transition-all text-left" onclick="selectTitleItem(this, '첫걸음의 순례자', '칭호 · 첫걸음')" type="button"><div class="flex items-center gap-space-sm"><div class="w-9 h-9 rounded-full bg-primary-container/15 text-primary flex items-center justify-center shrink-0"><span class="material-symbols-outlined text-[20px]">footprint</span></div><div class="flex flex-col"><div class="flex items-center gap-1.5"><span class="font-label-lg text-label-lg text-on-surface font-semibold title-label-text">첫걸음의 순례자</span><span class="text-[10px] px-1.5 py-0.2 rounded bg-surface-container-high text-on-surface-variant">1일 결단</span></div><span class="font-body-sm text-[11px] text-on-surface-variant leading-snug">세상을 뒤로하고 거룩한 결단의 첫걸음을 뗀 성도</span></div></div><div class="check-circle-icon hidden w-5 h-5 rounded-full bg-primary text-on-primary flex items-center justify-center shrink-0 ml-2"><span class="material-symbols-outlined text-[14px]">check</span></div></button><button class="title-option-item w-full p-space-sm rounded-xl bg-surface-container/40 hover:bg-surface-container flex items-center justify-between border border-transparent transition-all text-left" onclick="selectTitleItem(this, '새벽의 파수꾼', '칭호 · 파수꾼')" type="button"><div class="flex items-center gap-space-sm"><div class="w-9 h-9 rounded-full bg-primary-container/15 text-primary flex items-center justify-center shrink-0"><span class="material-symbols-outlined text-[20px]">wb_twilight</span></div><div class="flex flex-col"><div class="flex items-center gap-1.5"><span class="font-label-lg text-label-lg text-on-surface font-semibold title-label-text">새벽의 파수꾼</span><span class="text-[10px] px-1.5 py-0.2 rounded bg-surface-container-high text-on-surface-variant">7일 승리</span></div><span class="font-body-sm text-[11px] text-on-surface-variant leading-snug">어둠의 유혹을 깨우고 빛 가운데 머무는 자</span></div></div><div class="check-circle-icon hidden w-5 h-5 rounded-full bg-primary text-on-primary flex items-center justify-center shrink-0 ml-2"><span class="material-symbols-outlined text-[14px]">check</span></div></button><button class="title-option-item w-full p-space-sm rounded-xl bg-surface-container/40 hover:bg-surface-container flex items-center justify-between border border-transparent transition-all text-left" onclick="selectTitleItem(this, '진리의 수호자', '칭호 · 수호자')" type="button"><div class="flex items-center gap-space-sm"><div class="w-9 h-9 rounded-full bg-primary-container/15 text-primary flex items-center justify-center shrink-0"><span class="material-symbols-outlined text-[20px]">shield</span></div><div class="flex flex-col"><div class="flex items-center gap-1.5"><span class="font-label-lg text-label-lg text-on-surface font-semibold title-label-text">진리의 수호자</span><span class="text-[10px] px-1.5 py-0.2 rounded bg-surface-container-high text-on-surface-variant">14일 승리</span></div><span class="font-body-sm text-[11px] text-on-surface-variant leading-snug">말씀의 검으로 생각과 시선을 지켜낸 자</span></div></div><div class="check-circle-icon hidden w-5 h-5 rounded-full bg-primary text-on-primary flex items-center justify-center shrink-0 ml-2"><span class="material-symbols-outlined text-[14px]">check</span></div></button><button class="title-option-item w-full p-space-sm rounded-xl border flex items-center justify-between transition-all text-left is-selected bg-surface-container/80 border-primary/40" onclick="selectTitleItem(this, '동행자', '칭호 · 동행자')" type="button"><div class="flex items-center gap-space-sm"><div class="w-9 h-9 rounded-full bg-primary-container/20 text-primary flex items-center justify-center shrink-0"><span class="material-symbols-outlined text-[20px]">workspace_premium</span></div><div class="flex flex-col"><div class="flex items-center gap-1.5"><span class="font-label-lg text-label-lg font-semibold title-label-text text-primary">동행자</span><span class="text-[10px] px-1.5 py-0.2 rounded bg-tertiary-container/20 text-tertiary font-semibold">30일 승리</span></div><span class="font-body-sm text-[11px] text-on-surface-variant leading-snug">습관을 넘어 매 순간 주님과 동행하는 성도</span></div></div><div class="check-circle-icon w-5 h-5 rounded-full bg-primary text-on-primary flex items-center justify-center shrink-0 ml-2"><span class="material-symbols-outlined text-[14px]">check</span></div></button></div><div class="flex flex-col gap-2 mt-1"><div class="text-label-sm font-semibold text-on-surface-variant/70 px-1 flex items-center gap-1"><span class="material-symbols-outlined text-[14px]">lock</span>도전 과제 (잠김)</div><div class="w-full p-space-sm rounded-xl bg-surface-container-lowest/60 border border-outline-variant/30 flex flex-col gap-2"><div class="flex items-center justify-between"><div class="flex items-center gap-space-sm"><div class="w-9 h-9 rounded-full bg-surface-container-highest text-on-surface-variant flex items-center justify-center shrink-0"><span class="material-symbols-outlined text-[20px]">lock</span></div><div class="flex flex-col"><div class="flex items-center gap-1.5"><span class="font-label-lg text-label-lg text-on-surface-variant font-medium">승리의 용사</span><span class="px-1.5 py-0.2 rounded bg-surface-container-highest text-on-surface-variant text-[10px]">60일 마일스톤</span></div><span class="font-body-sm text-[11px] text-on-surface-variant/70">믿음의 선한 싸움을 싸우며 승리하는 자</span></div></div><span class="font-label-sm text-label-sm text-primary font-semibold">30 / 60일</span></div><div class="w-full h-1.5 rounded-full bg-surface-container-highest overflow-hidden"><div class="h-full bg-primary rounded-full" style="width: 50%;"></div></div></div><div class="w-full p-space-sm rounded-xl bg-surface-container-lowest/60 border border-outline-variant/30 flex items-center justify-between opacity-60"><div class="flex items-center gap-space-sm"><div class="w-9 h-9 rounded-full bg-surface-container-highest text-on-surface-variant flex items-center justify-center shrink-0"><span class="material-symbols-outlined text-[20px]">lock</span></div><div class="flex flex-col"><div class="flex items-center gap-1.5"><span class="font-label-lg text-label-lg text-on-surface-variant font-medium">거룩한 신부</span><span class="px-1.5 py-0.2 rounded bg-surface-container-highest text-on-surface-variant text-[10px]">90일 완주</span></div><span class="font-body-sm text-[11px] text-on-surface-variant/70">작정 90일 정결 완주 시 해금</span></div></div><span class="material-symbols-outlined text-[16px] text-on-surface-variant/50">lock</span></div><div class="w-full p-space-sm rounded-xl bg-surface-container-lowest/60 border border-outline-variant/30 flex items-center justify-between opacity-60"><div class="flex items-center gap-space-sm"><div class="w-9 h-9 rounded-full bg-surface-container-highest text-on-surface-variant flex items-center justify-center shrink-0"><span class="material-symbols-outlined text-[20px]">lock</span></div><div class="flex flex-col"><div class="flex items-center gap-1.5"><span class="font-label-lg text-label-lg text-on-surface-variant font-medium">영광의 면류관</span><span class="px-1.5 py-0.2 rounded bg-surface-container-highest text-on-surface-variant text-[10px]">365일 성취</span></div><span class="font-body-sm text-[11px] text-on-surface-variant/70">1년 완전 정결 승리의 표비</span></div></div><span class="material-symbols-outlined text-[16px] text-on-surface-variant/50">lock</span></div></div></div><div class="flex flex-col gap-2 pt-3 border-t border-outline-variant/30 w-full"><button class="w-full h-12 bg-primary-container text-on-primary font-label-lg text-label-lg font-semibold rounded-xl flex items-center justify-center gap-1.5 active:scale-[0.99] transition-transform shadow-sm cursor-pointer" id="apply-title-btn" onclick="applyFaithTitle()" type="button"><span class="material-symbols-outlined text-[18px]">check</span>칭호 변경 적용하기</button><button class="w-full py-2.5 text-on-surface-variant hover:text-on-surface font-label-md text-label-md text-center transition-colors active:scale-[0.99] cursor-pointer" onclick="closeTitleModal()" type="button">취소 및 뒤로가기</button><p class="font-body-sm text-[11px] text-on-surface-variant/70 text-center mt-0.5">선택한 칭호는 프로필 및 메인 화면 배지에 노출됩니다.</p></div></div></div>
+<!-- Bottom Navigation Bar (Fixed 3 tabs) -->
+<nav class="fixed bottom-0 inset-x-0 pb-safe bg-[#121413]/90 backdrop-blur-xl border-t border-[#3c4a42]/30 shadow-[0_-1px_8px_rgba(0,0,0,0.04)] z-30" data-active-classes="text-[#34d399] font-medium">
+<div class="flex items-center justify-around h-16 max-w-md mx-auto px-margin">
+<!-- 1. 요약 -->
+<a aria-current="page" class="nav-item flex flex-col items-center justify-center min-w-[56px] min-h-[44px] px-space-md py-space-xs transition-colors cursor-pointer text-[#34d399] font-medium" data-path="요약" onclick="switchTab('요약')">
+<svg class="w-6 h-6" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" viewBox="0 0 24 24">
+<path d="M11 20A7 7 0 0 1 9.8 6.1C15.5 5 17 4.48 19 2c1 2 2 4.18 2 8 0 5.5-4.78 10-10 10Z"></path>
+<path d="M2 21c0-3 1.85-5.36 5.08-6C9.5 14.52 12 13 13 12"></path>
+</svg>
+<span class="font-label-sm text-label-sm mt-0.5 tracking-tight">요약</span>
+</a>
+<!-- 2. 여정 -->
+<a class="nav-item flex flex-col items-center justify-center min-w-[56px] min-h-[44px] px-space-md py-space-xs transition-colors hover:text-[#f1f5f2] cursor-pointer text-[#71717a]" data-path="여정" onclick="switchTab('여정')">
+<svg class="w-6 h-6" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" viewBox="0 0 24 24">
+<rect height="18" rx="3" width="18" x="3" y="4"></rect>
+<path d="M8 2v4"></path>
+<path d="M16 2v4"></path>
+<path d="M3 10h18"></path>
+<path d="m9 16 2 2 4-4"></path>
+</svg>
+<span class="font-label-sm text-label-sm mt-0.5 tracking-tight">여정</span>
+</a>
+<!-- 3. 동행 -->
+<a class="nav-item flex flex-col items-center justify-center min-w-[56px] min-h-[44px] px-space-md py-space-xs transition-colors hover:text-[#f1f5f2] cursor-pointer text-[#71717a]" data-path="동행" onclick="switchTab('동행')">
+<svg class="w-6 h-6" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" viewBox="0 0 24 24">
+<path d="M4 19.5v-15A2.5 2.5 0 0 1 6.5 2H20v20H6.5a2.5 2.5 0 0 1-2.5-2.5Z"></path>
+<path d="M8 7h6"></path>
+<path d="M8 11h6"></path>
+</svg>
+<span class="font-label-sm text-label-sm mt-0.5 tracking-tight">동행</span>
+</a>
+</div>
+</nav>
+<script>
+    // Tab switching controller
+    function switchTab(targetName) {
+      const tabs = {
+        '요약': document.getElementById('tab-view-summary'),
+        '여정': document.getElementById('tab-view-journey'),
+        '동행': document.getElementById('tab-view-fellowship')
+      };
+
+      // Bottom bar link styling
+      const navLinks = document.querySelectorAll('.nav-item');
+      navLinks.forEach(link => {
+        const path = link.getAttribute('data-path');
+        if (path === targetName) {
+          link.classList.remove('text-[#71717a]');
+          link.classList.add('text-[#34d399]', 'font-medium');
+        } else {
+          link.classList.remove('text-[#34d399]', 'font-medium');
+          link.classList.add('text-[#71717a]');
+        }
+      });
+
+      // Floating write button on fellowship tab only
+      const writeBtn = document.getElementById('openWriteModalBtn');
+      if (writeBtn) {
+        if (targetName === '동행') writeBtn.classList.remove('hidden');
+        else writeBtn.classList.add('hidden');
+      }
+
+      // Smoothly switch panes
+      Object.keys(tabs).forEach(name => {
+        const pane = tabs[name];
+        if (!pane) return;
+        if (name === targetName) {
+          pane.classList.remove('hidden');
+          requestAnimationFrame(() => {
+            pane.classList.remove('opacity-0');
+            pane.classList.add('opacity-100');
+          });
+        } else {
+          pane.classList.add('opacity-0');
+          pane.classList.remove('opacity-100');
+          setTimeout(() => {
+            if (pane.classList.contains('opacity-0')) {
+              pane.classList.add('hidden');
+            }
+          }, 200);
+        }
+      });
+
+      window.scrollTo({ top: 0, behavior: 'smooth' });
+    }
+
+    // Meditation toggle
+    function toggleMeditation() {
+      const btn = document.getElementById('meditation-btn');
+      const text = document.getElementById('meditation-text');
+      const isDone = btn.getAttribute('aria-pressed') === 'true';
+
+      if (!isDone) {
+        btn.setAttribute('aria-pressed', 'true');
+        btn.className = 'inline-flex items-center gap-1.5 px-space-md py-2 rounded-lg font-label-md text-label-md transition-all active:scale-95 bg-primary-container text-on-primary-container';
+        text.innerText = '묵상 기록됨';
+        showToast('오늘의 말씀 묵상이 은혜 가운데 기록되었습니다.');
+      } else {
+        btn.setAttribute('aria-pressed', 'false');
+        btn.className = 'inline-flex items-center gap-1.5 px-space-md py-2 rounded-lg font-label-md text-label-md transition-all active:scale-95 bg-surface-container-high text-on-surface';
+        text.innerText = '묵상 완료하기';
+      }
+    }
+
+    // Daily Habit toggler
+    function toggleHabit(row) {
+      const isDone = row.getAttribute('data-done') === 'true';
+      const checkBox = row.querySelector('.check-box');
+      const title = row.querySelector('.item-title');
+
+      if (isDone) {
+        row.setAttribute('data-done', 'false');
+        checkBox.className = 'check-box w-6 h-6 rounded-md bg-surface-container-highest flex items-center justify-center text-transparent transition-all';
+        title.classList.remove('line-through', 'text-[#bbcac0]');
+        title.classList.add('text-on-surface');
+      } else {
+        row.setAttribute('data-done', 'true');
+        checkBox.className = 'check-box w-6 h-6 rounded-md bg-primary-container flex items-center justify-center text-on-primary-container transition-all';
+        title.classList.add('line-through', 'text-[#bbcac0]');
+        title.classList.remove('text-on-surface');
+      }
+
+      const all = document.querySelectorAll('#tab-view-summary [data-done]');
+      const completed = Array.from(all).filter(h => h.getAttribute('data-done') === 'true').length;
+      const counter = document.getElementById('routine-counter');
+      if (counter) counter.innerText = `${completed} / ${all.length} 완료`;
+    }
+
+    // Toast
+    let toastTimer = null;
+    function showToast(text) {
+      const toast = document.getElementById('toastMessage');
+      toast.textContent = text;
+      toast.classList.remove('hidden');
+      clearTimeout(toastTimer);
+      toastTimer = setTimeout(() => {
+        toast.classList.add('hidden');
+      }, 3000);
+    }
+
+    // SOS Routine Modal Logic
+    let sosInterval = null;
+    let secondsLeft = 54;
+    const totalSeconds = 60;
+    const circumference = 2 * Math.PI * 102;
+
+    function startSosCountdown() {
+      secondsLeft = 54;
+      const timerDisplay = document.getElementById('sosTimerDisplay');
+      const progressCircle = document.getElementById('sosCountdownProgress');
+      const breathPhase = document.getElementById('sosBreathPhase');
+      const breathGuide = document.getElementById('sosBreathGuide');
+      const breathIndicator = document.getElementById('sosBreathIndicator');
+
+      clearInterval(sosInterval);
+      sosInterval = setInterval(() => {
+        if (secondsLeft > 0) {
+          secondsLeft--;
+          const mins = String(Math.floor(secondsLeft / 60)).padStart(2, '0');
+          const secs = String(secondsLeft % 60).padStart(2, '0');
+          if (timerDisplay) timerDisplay.textContent = `${mins}:${secs}`;
+
+          const elapsed = totalSeconds - secondsLeft;
+          if (progressCircle) {
+            progressCircle.style.strokeDashoffset = circumference - (elapsed / totalSeconds) * circumference;
+          }
+
+          const cycleTime = elapsed % 12;
+          if (cycleTime < 4) {
+            breathPhase.textContent = '들이마시기';
+            breathGuide.textContent = (4 - cycleTime) + '초간 깊게 호흡';
+            breathIndicator.style.transform = 'scale(1.06)';
+          } else if (cycleTime < 8) {
+            breathPhase.textContent = '숨 멈추기';
+            breathGuide.textContent = (8 - cycleTime) + '초간 평온히 유지';
+            breathIndicator.style.transform = 'scale(1.02)';
+          } else {
+            breathPhase.textContent = '천천히 내쉬기';
+            breathGuide.textContent = (12 - cycleTime) + '초간 긴장 이완';
+            breathIndicator.style.transform = 'scale(0.95)';
+          }
+        } else {
+          clearInterval(sosInterval);
+          if (breathPhase) breathPhase.textContent = '평안히 승리';
+        }
+      }, 1000);
+    }
+
+    function openSosView() {
+      const modal = document.getElementById('routineModal');
+      modal.classList.remove('hidden');
+      modal.classList.add('flex');
+      document.body.classList.add('overflow-hidden');
+      startSosCountdown();
+      if (navigator.vibrate) navigator.vibrate([200, 100, 200]);
+    }
+
+    function closeSosView() {
+      const modal = document.getElementById('routineModal');
+      modal.classList.add('hidden');
+      modal.classList.remove('flex');
+      document.body.classList.remove('overflow-hidden');
+      clearInterval(sosInterval);
+    }
+
+    function victorySos() {
+      showToast('할렐루야! 위기를 넘기고 거룩한 승리를 확정하였습니다.');
+      closeSosView();
+    }
+
+    function toggleStep(el) {
+      const box = el.querySelector('.checkbox-box');
+      const icon = box.querySelector('.material-symbols-outlined');
+      const label = el.querySelector('.font-body-md');
+      const isChecked = box.classList.contains('bg-primary');
+
+      if (isChecked) {
+        box.classList.remove('bg-primary');
+        box.classList.add('bg-surface-container');
+        icon.classList.add('opacity-0');
+        label.classList.remove('line-through', 'opacity-80');
+      } else {
+        box.classList.add('bg-primary');
+        box.classList.remove('bg-surface-container');
+        icon.classList.remove('opacity-0');
+        label.classList.add('line-through', 'opacity-80');
+      }
+
+      const totalActive = document.querySelectorAll('#routineModal .step-item .checkbox-box.bg-primary').length;
+      document.getElementById('sosStepCounter').textContent = `${totalActive} / 3 완료`;
+    }
+
+    function toggleAudio(btn) {
+      const icon = document.getElementById('sosAudioIcon');
+      const isMuted = icon.textContent === 'volume_off';
+      icon.textContent = isMuted ? 'volume_up' : 'volume_off';
+      btn.classList.toggle('text-primary', isMuted);
+    }
+
+    // Prescriptions Data
+    const prescriptionsData = [
+      {
+        title: '유혹이 찾아올 때',
+        tag: '깊은 밤 홀로 • 침실',
+        verseRef: '고린도전서 10:13',
+        verseContent: '“사람이 감당할 시험 밖에는 너희가 당한 것이 없나니 오직 하나님은 미쁘사 너희가 감당하지 못할 시험 당함을 허락하지 아니하시고 시험 당할 즈음에 또한 피할 길을 내사 너희로 능히 감당하게 하시느니라.”',
+        guide: '깊은 밤 홀로 있는 시간은 사탄이 공격하는 주된 통로입니다. 내 몸은 쾌락의 도구가 아닌 거룩한 성령님이 거하시는 성전임을 선포하고 즉시 격리하십시오.',
+        declaration: '“내 몸은 보혈로 사신 하나님의 거룩한 성전이다! 어둠의 충동과 음란의 유혹은 예수 그리스도의 이름으로 당장 떠나갈지어다!”'
+      },
+      {
+        title: '마음이 흔들릴 때',
+        tag: '스크롤 • 시선의 올무',
+        verseRef: '시편 51:10 & 고전 6:18',
+        verseContent: '“하나님이여 내 속에 정한 마음을 창조하시고 내 안에 정직한 영을 새롭게 하소서.”',
+        guide: '무심코 넘기는 숏폼과 피드의 시각적 자극은 영혼의 방벽을 순식간에 무너뜨립니다. 지금 즉시 화면을 엎어놓고 눈을 감아 주님의 거룩한 얼굴을 구하십시오.',
+        declaration: '“나는 썩어질 쾌락을 좇는 육체의 노예가 아니다! 정결하신 성령님, 내 시선과 생각을 지금 이 순간 온전히 다스려 주옵소서!”'
+      },
+      {
+        title: '죄책감이 들 때',
+        tag: '낙심 • 은혜의 보좌',
+        verseRef: '로마서 8:1-2',
+        verseContent: '“그러므로 이제 그리스도 예수 안에 있는 자에게는 결코 정죄함이 없나니 이는 그리스도 예수 안에 있는 생명의 성령의 법이 죄와 사망의 법에서 너를 해방하였음이라.”',
+        guide: '사탄의 가장 큰 무기는 정죄감과 수치심입니다. 그러나 예수 그리스도의 보혈은 우리의 모든 죄보다 크십니다. 숨지 말고 보좌 앞으로 나아가십시오.',
+        declaration: '“사탄아 물러가라! 그리스도 예수 안에 있는 내게는 결코 정죄함이 없다. 나는 다시 일어날 것이며 주님의 은혜로 승리한다!”'
+      },
+      {
+        title: '영적 무기력',
+        tag: '번아웃 • 도파민 갈망',
+        verseRef: '빌립보서 4:13 & 시편 42:5',
+        verseContent: '“내게 능력 주시는 자 안에서 내가 모든 것을 할 수 있느니라.”',
+        guide: '마음이 지치고 무기력할 때 뇌는 손쉬운 가짜 도파민을 갈망합니다. 억지로 싸우려 하지 말고, 생명수가 되시는 주님 품에 기대어 영의 호흡을 되찾으십시오.',
+        declaration: '“나의 영혼을 소성케 하시는 주님을 바라봅니다. 세상의 거짓된 쾌락이 아닌 영원한 생명수로 나의 빈 잔을 채우소서!”'
+      }
+    ];
+
+    function openPrescription(idx) {
+      const data = prescriptionsData[idx];
+      if (!data) return;
+      document.getElementById('prescTag').textContent = data.tag;
+      document.getElementById('prescTitle').textContent = data.title;
+      document.getElementById('prescVerseRef').textContent = data.verseRef;
+      document.getElementById('prescVerseContent').textContent = data.verseContent;
+      document.getElementById('prescGuide').textContent = data.guide;
+      document.getElementById('prescDeclaration').textContent = data.declaration;
+      document.getElementById('prescriptionModal').classList.remove('hidden');
+    }
+
+    function closePrescription() {
+      document.getElementById('prescriptionModal').classList.add('hidden');
+    }
+
+    function declarePrescription() {
+      showToast('선포 완료! 말씀의 권능으로 유혹을 물리쳤습니다.');
+      closePrescription();
+    }
+
+    // Community interactions
+    function togglePrayerLike(btn) {
+      const countEl = btn.querySelector('.count');
+      let count = parseInt(countEl.textContent, 10);
+      const isPrayed = btn.dataset.prayed === 'true';
+
+      if (isPrayed) {
+        btn.dataset.prayed = 'false';
+        btn.classList.remove('text-primary');
+        countEl.textContent = count - 1;
+      } else {
+        btn.dataset.prayed = 'true';
+        btn.classList.add('text-primary');
+        countEl.textContent = count + 1;
+        showToast('동행자의 마음에 함께 중보의 손을 얹었습니다.');
+      }
+    }
+
+    function triggerSosRequest(btn) {
+      btn.classList.add('bg-primary-container', 'text-on-primary-container');
+      btn.innerHTML = '<span class="font-bold">✓ 익명 SOS 중보가 142명의 동행자에게 전달되었습니다</span>';
+      showToast('함께하는 모든 동행자가 지금 성도님을 위해 기도합니다.');
+    }
+
+    function openWriteModal() {
+      showToast('동행 나눔 및 간증 작성 모달이 열립니다.');
+    }
+  </script>
+
+
+<script id="profile-logic">
+function openProfileView() {
+  const profile = document.getElementById('profileOverlayView');
+  if (profile) {
+    profile.classList.remove('hidden');
+    profile.classList.add('flex');
+    document.body.classList.add('overflow-hidden');
+  }
+}
+
+function closeProfileView() {
+  const profile = document.getElementById('profileOverlayView');
+  if (profile) {
+    profile.classList.add('hidden');
+    profile.classList.remove('flex');
+    document.body.classList.remove('overflow-hidden');
+  }
+}
+
+function openNicknameModal() {
+  const m = document.getElementById('nickname-modal');
+  if (m) m.classList.remove('hidden');
+}
+
+function closeNicknameModal() {
+  const m = document.getElementById('nickname-modal');
+  if (m) m.classList.add('hidden');
+}
+
+function saveNickname() {
+  const inp = document.getElementById('nickname-input');
+  if (inp && inp.value.trim()) {
+    const disp = document.getElementById('user-nickname-display');
+    if (disp) disp.textContent = inp.value.trim();
+    showToast('닉네임이 성공적으로 변경되었습니다.');
+  }
+  closeNicknameModal();
+}
+
+function openTitleModal() {
+  const m = document.getElementById('title-modal');
+  if (m) m.classList.remove('hidden');
+}
+
+function closeTitleModal() {
+  const m = document.getElementById('title-modal');
+  if (m) m.classList.add('hidden');
+}
+
+let selectedTitleName = '동행자';
+let selectedTitleBadge = '칭호 · 동행자';
+function selectTitleItem(btn, name, badgeText) {
+  document.querySelectorAll('.title-option-item').forEach(el => {
+    el.classList.remove('is-selected', 'bg-surface-container/80', 'border-primary/40');
+    el.classList.add('bg-surface-container/40', 'border-transparent');
+    const chk = el.querySelector('.check-circle-icon');
+    if (chk) chk.classList.add('hidden');
+    const titleText = el.querySelector('.title-label-text');
+    if (titleText) titleText.classList.remove('text-primary');
+  });
+  btn.classList.add('is-selected', 'bg-surface-container/80', 'border-primary/40');
+  btn.classList.remove('bg-surface-container/40', 'border-transparent');
+  const chk = btn.querySelector('.check-circle-icon');
+  if (chk) chk.classList.remove('hidden');
+  const titleText = btn.querySelector('.title-label-text');
+  if (titleText) titleText.classList.add('text-primary');
+  selectedTitleName = name;
+  selectedTitleBadge = badgeText;
+}
+
+function applyFaithTitle() {
+  const headerBadge = document.getElementById('header-title-badge-label');
+  if (headerBadge) headerBadge.textContent = selectedTitleName;
+  const currentTitleBadge = document.getElementById('current-title-badge-text');
+  if (currentTitleBadge) currentTitleBadge.textContent = selectedTitleBadge;
+  const preview = document.getElementById('equipped-title-preview');
+  if (preview) preview.textContent = selectedTitleName;
+  closeTitleModal();
+  showToast('신앙 칭호가 반영되었습니다.');
+}
+</script><script>
+function openProfileView() {
+  const el = document.getElementById('profileOverlayView');
+  if (el) {
+    el.classList.remove('hidden');
+    el.style.display = 'block';
+  }
+}
+function closeProfileView() {
+  const el = document.getElementById('profileOverlayView');
+  if (el) {
+    el.classList.add('hidden');
+    el.style.display = 'none';
+  }
+}
+window.openProfileView = openProfileView;
+window.closeProfileView = closeProfileView;
+document.addEventListener('DOMContentLoaded', () => {
+  const av = document.getElementById('header-avatar-btn');
+  if (av) av.addEventListener('click', openProfileView);
+  const back = document.getElementById('profile-back-btn');
+  if (back) back.addEventListener('click', closeProfileView);
+});
+</script>
+
+<script id="write-modal-handler">
+function openWriteModal() {
+  const m = document.getElementById('writeModal');
+  if (m) {
+    m.classList.remove('hidden');
+    document.body.classList.add('overflow-hidden');
+  }
+}
+function closeWriteModal() {
+  const m = document.getElementById('writeModal');
+  if (m) {
+    m.classList.add('hidden');
+    document.body.classList.remove('overflow-hidden');
+  }
+}
+function submitWriteModal() {
+  const input = document.getElementById('write-content-input');
+  if (input && input.value.trim()) {
+    showToast('동행자 나눔터에 은혜로운 간증이 등록되었습니다.');
+    input.value = '';
+    closeWriteModal();
+  } else {
+    showToast('나눔 내용을 작성해 주세요.');
+  }
+}
+window.openWriteModal = openWriteModal;
+window.closeWriteModal = closeWriteModal;
+window.submitWriteModal = submitWriteModal;
+</script>
+<script id="sanctuary-persistence-engine">
+(function() {
+  const STORAGE_KEYS = {
+    START_DATE: 'sanctuary_start_timestamp',
+    GOAL_DAYS: 'sanctuary_goal_days',
+    NICKNAME: 'sanctuary_nickname',
+    TITLE_NAME: 'sanctuary_title_name',
+    TITLE_BADGE: 'sanctuary_title_badge',
+    HABITS_PREFIX: 'sanctuary_habits_',
+    MEDITATION_PREFIX: 'sanctuary_meditation_',
+    FELLOWSHIP_POSTS: 'sanctuary_fellowship_posts',
+    SWITCH_STATES: 'sanctuary_switches'
+  };
+
+  function getTodayStr() {
+    const d = new Date();
+    return `${d.getFullYear()}-${String(d.getMonth() + 1).padStart(2, '0')}-${String(d.getDate()).padStart(2, '0')}`;
+  }
+
+  function getKoreanDateLabel() {
+    const d = new Date();
+    const days = ['일요일', '월요일', '화요일', '수요일', '목요일', '금요일', '토요일'];
+    return `${d.getMonth() + 1}월 ${d.getDate()}일 ${days[d.getDay()]}`;
+  }
+
+  function formatDotDate(ts) {
+    const d = new Date(ts);
+    return `${d.getFullYear()}. ${String(d.getMonth() + 1).padStart(2, '0')}. ${String(d.getDate()).padStart(2, '0')}`;
+  }
+
+  function formatShortDate(ts) {
+    const d = new Date(ts);
+    return `${d.getMonth() + 1}월 ${d.getDate()}일`;
+  }
+
+  // Initialize start timestamp (default: 1 day ago or saved)
+  function getStartTimestamp() {
+    let ts = localStorage.getItem(STORAGE_KEYS.START_DATE);
+    if (!ts) {
+      // First time user: start from today (Day 1)
+      ts = String(Date.now());
+      localStorage.setItem(STORAGE_KEYS.START_DATE, ts);
+    }
+    return parseInt(ts, 10);
+  }
+
+  function getGoalDays() {
+    return parseInt(localStorage.getItem(STORAGE_KEYS.GOAL_DAYS) || '90', 10);
+  }
+
+  function updateAllTelemetry() {
+    const startTs = getStartTimestamp();
+    const goalDays = getGoalDays();
+    const now = Date.now();
+    const diffMs = Math.max(0, now - startTs);
+    const totalHours = Math.floor(diffMs / (1000 * 60 * 60));
+    const daysCount = Math.max(1, Math.floor(diffMs / (1000 * 60 * 60 * 24)) + 1);
+    const minsCount = Math.floor((diffMs / (1000 * 60)) % 60);
+    const secsCount = Math.floor((diffMs / 1000) % 60);
+    const pct = Math.min(100, ((daysCount / goalDays) * 100)).toFixed(1);
+    const remainDays = Math.max(0, goalDays - daysCount);
+    const targetTs = startTs + goalDays * 24 * 60 * 60 * 1000;
+
+    // Update date headers across all tabs
+    const dateLabel = getKoreanDateLabel();
+    const sumDateEl = document.querySelector('#tab-view-summary header span.uppercase');
+    if (sumDateEl) sumDateEl.textContent = dateLabel;
+    const jnyDateEl = document.querySelector('#tab-view-journey section:first-child span');
+    if (jnyDateEl) jnyDateEl.textContent = dateLabel;
+    const felDateEl = document.querySelector('#tab-view-fellowship section:first-child div.text-xs');
+    if (felDateEl) felDateEl.textContent = dateLabel;
+
+    // Update Summary Tab Header & Streak
+    const sumBadge = document.querySelector('#tab-view-summary header span.rounded-full');
+    if (sumBadge) {
+      sumBadge.innerHTML = `<span class="w-1.5 h-1.5 rounded-full bg-primary-container animate-pulse shrink-0"></span>동행 ${daysCount}일차`;
+    }
+    const sumHeadline = document.querySelector('#tab-view-summary header h1');
+    if (sumHeadline) {
+      sumHeadline.innerHTML = `흔들림 없는 믿음으로<br>지켜낸 ${daysCount}일의 승리`;
+    }
+    const bigDigits = document.querySelector('#tab-view-summary .font-display-lg');
+    if (bigDigits) bigDigits.textContent = daysCount;
+
+    const hoursPara = document.querySelector('#tab-view-summary section.bg-surface-container-low p.font-body-sm');
+    if (hoursPara) {
+      hoursPara.innerHTML = `누적 <span class="text-on-surface font-medium">${totalHours}시간 ${minsCount}분 ${secsCount}초</span> 거룩한 절제를 유지하고 있습니다`;
+    }
+
+    // Goal gauge in Summary
+    const gaugeTexts = document.querySelectorAll('#tab-view-summary .bg-surface-container-lowest\\/50 .flex.items-center.justify-between span');
+    if (gaugeTexts.length >= 2) {
+      gaugeTexts[0].textContent = `1차 목표 ${goalDays}일`;
+      gaugeTexts[1].textContent = `${daysCount}일 진행 (${pct}%)`;
+    }
+    const gaugeBar = document.querySelector('#tab-view-summary .bg-surface-container-lowest\\/50 .bg-primary.rounded-full');
+    if (gaugeBar) gaugeBar.style.width = `${pct}%`;
+
+    const startEndSpans = document.querySelectorAll('#tab-view-summary .bg-surface-container-lowest\\/50 .flex.justify-between.items-center.mt-2 span');
+    if (startEndSpans.length >= 2) {
+      startEndSpans[0].textContent = `시작일: ${formatShortDate(startTs)}`;
+      startEndSpans[1].textContent = `목표일: ${formatShortDate(targetTs)}`;
+    }
+
+    // Update Journey Tab
+    const jnyBig = document.querySelector('#tab-view-journey .font-display-lg-mobile');
+    if (jnyBig) jnyBig.textContent = daysCount;
+    const jnyStatCards = document.querySelectorAll('#tab-view-journey .grid.grid-cols-2 .font-headline-md');
+    if (jnyStatCards.length >= 1) {
+      jnyStatCards[0].innerHTML = `${totalHours}<span class="font-label-sm text-label-sm text-[#9ca3af] font-normal ml-0.5">시간</span>`;
+    }
+    const jnyRemain = document.querySelector('#tab-view-journey .text-emerald-400');
+    if (jnyRemain) {
+      jnyRemain.innerHTML = `${remainDays}일 남음 <span class="text-[#9ca3af] font-normal">(${pct}%)</span>`;
+    }
+    const jnyBar = document.querySelector('#tab-view-journey .bg-primary-container.rounded-full');
+    if (jnyBar) jnyBar.style.width = `${pct}%`;
+
+    // Update Profile Overlay stats
+    const profStats = document.querySelectorAll('#profileOverlayView .grid.grid-cols-3 .font-headline-md');
+    if (profStats.length >= 3) {
+      profStats[0].textContent = daysCount;
+      profStats[1].textContent = totalHours;
+      profStats[2].textContent = pct;
+    }
+    const profDayBadge = document.querySelector('#profileOverlayView span.bg-primary-container\\/15');
+    if (profDayBadge) {
+      profDayBadge.innerHTML = `<span class="w-1.5 h-1.5 rounded-full bg-primary inline-block"></span>동행 ${daysCount}일차`;
+    }
+    const graceCurr = document.querySelector('#grace-modal .font-headline-lg-mobile');
+    if (graceCurr) graceCurr.textContent = `${daysCount}일차`;
+  }
+
+  // Nickname & Title Persistence
+  function loadIdentity() {
+    const savedNick = localStorage.getItem(STORAGE_KEYS.NICKNAME) || '은혜';
+    const nickEls = document.querySelectorAll('#user-nickname-display');
+    nickEls.forEach(el => el.textContent = savedNick);
+    const nickInput = document.getElementById('nickname-input');
+    if (nickInput) nickInput.value = savedNick;
+
+    // Update greeting name on tabs
+    document.querySelectorAll('#tab-view-summary header .text-\\[\\#34d399\\], #tab-view-journey .text-\\[\\#34d399\\].font-bold, #tab-view-fellowship .text-primary.font-bold').forEach(el => {
+      if (el.textContent.includes('님')) el.textContent = `${savedNick} 님`;
+    });
+
+    const savedTitle = localStorage.getItem(STORAGE_KEYS.TITLE_NAME);
+    const savedBadge = localStorage.getItem(STORAGE_KEYS.TITLE_BADGE);
+    if (savedTitle) {
+      const headerBadge = document.getElementById('header-title-badge-label');
+      if (headerBadge) headerBadge.textContent = savedTitle;
+      const preview = document.getElementById('equipped-title-preview');
+      if (preview) preview.textContent = savedTitle;
+    }
+    if (savedBadge) {
+      const currentTitleBadge = document.getElementById('current-title-badge-text');
+      if (currentTitleBadge) currentTitleBadge.textContent = savedBadge;
+    }
+  }
+
+  // Override saveNickname & applyFaithTitle to persist
+  const origSaveNickname = window.saveNickname;
+  window.saveNickname = function() {
+    const inp = document.getElementById('nickname-input');
+    if (inp && inp.value.trim()) {
+      localStorage.setItem(STORAGE_KEYS.NICKNAME, inp.value.trim());
+    }
+    if (origSaveNickname) origSaveNickname();
+    loadIdentity();
+  };
+
+  const origApplyTitle = window.applyFaithTitle;
+  window.applyFaithTitle = function() {
+    if (origApplyTitle) origApplyTitle();
+    const headerBadge = document.getElementById('header-title-badge-label');
+    const currentTitleBadge = document.getElementById('current-title-badge-text');
+    if (headerBadge) localStorage.setItem(STORAGE_KEYS.TITLE_NAME, headerBadge.textContent);
+    if (currentTitleBadge) localStorage.setItem(STORAGE_KEYS.TITLE_BADGE, currentTitleBadge.textContent);
+  };
+
+  // Habits persistence for today
+  function initHabits() {
+    const todayKey = STORAGE_KEYS.HABITS_PREFIX + getTodayStr();
+    const rows = document.querySelectorAll('#tab-view-summary [data-done]');
+    let saved = JSON.parse(localStorage.getItem(todayKey) || 'null');
+    if (!saved) {
+      // Default for a new day: all unchecked so user can check them off today
+      saved = [false, false, false, false];
+      localStorage.setItem(todayKey, JSON.stringify(saved));
+    }
+    rows.forEach((row, idx) => {
+      const done = !!saved[idx];
+      // Set opposite first, then call toggle or apply classes directly
+      const checkBox = row.querySelector('.check-box');
+      const title = row.querySelector('.item-title');
+      const sub = row.querySelector('.item-subtitle');
+      row.setAttribute('data-done', done ? 'true' : 'false');
+      if (done) {
+        checkBox.className = 'check-box w-6 h-6 rounded-md bg-primary-container flex items-center justify-center text-on-primary-container transition-all';
+        title.classList.add('line-through', 'text-[#bbcac0]');
+        title.classList.remove('text-on-surface');
+        if (sub) sub.textContent = '오늘 실천 완료';
+      } else {
+        checkBox.className = 'check-box w-6 h-6 rounded-md bg-surface-container-highest flex items-center justify-center text-transparent transition-all';
+        title.classList.remove('line-through', 'text-[#bbcac0]');
+        title.classList.add('text-on-surface');
+        if (sub) sub.textContent = '터치하여 오늘 루틴 완료하기';
+      }
+    });
+    const completed = saved.filter(Boolean).length;
+    const counter = document.getElementById('routine-counter');
+    if (counter) counter.innerText = `${completed} / ${rows.length} 완료`;
+  }
+
+  const origToggleHabit = window.toggleHabit;
+  window.toggleHabit = function(row) {
+    if (origToggleHabit) origToggleHabit(row);
+    const rows = document.querySelectorAll('#tab-view-summary [data-done]');
+    const state = Array.from(rows).map(r => {
+      const isDone = r.getAttribute('data-done') === 'true';
+      const sub = r.querySelector('.item-subtitle');
+      if (sub) sub.textContent = isDone ? '방금 실천 완료됨' : '터치하여 오늘 루틴 완료하기';
+      return isDone;
+    });
+    localStorage.setItem(STORAGE_KEYS.HABITS_PREFIX + getTodayStr(), JSON.stringify(state));
+  };
+
+  // Reset Streak handler in Grace Modal
+  const graceResetBtn = document.querySelector('#grace-modal button.bg-primary-container');
+  if (graceResetBtn) {
+    graceResetBtn.onclick = function() {
+      localStorage.setItem(STORAGE_KEYS.START_DATE, String(Date.now()));
+      updateAllTelemetry();
+      document.getElementById('grace-modal').classList.add('hidden');
+      closeProfileView();
+      showToast('새로운 은혜로 다시 1일차 결단을 시작합니다.');
+    };
+  }
+
+  // Make settings toggle switches interactive
+  document.querySelectorAll('.switch-toggle-btn').forEach((btn, idx) => {
+    btn.addEventListener('click', () => {
+      const isChecked = btn.getAttribute('aria-checked') === 'true';
+      const next = !isChecked;
+      btn.setAttribute('aria-checked', String(next));
+      const knob = btn.querySelector('span');
+      if (next) {
+        btn.classList.add('bg-primary-container');
+        btn.classList.remove('bg-surface-container-highest');
+        if (knob) {
+          knob.classList.add('translate-x-5', 'bg-on-primary');
+          knob.classList.remove('translate-x-0', 'bg-outline');
+        }
+      } else {
+        btn.classList.remove('bg-primary-container');
+        btn.classList.add('bg-surface-container-highest');
+        if (knob) {
+          knob.classList.remove('translate-x-5', 'bg-on-primary');
+          knob.classList.add('translate-x-0', 'bg-outline');
+        }
+      }
+    });
+  });
+
+  // Fellowship write modal: actually append new post to feed and save to localStorage
+  let selectedCategory = '승리 간증';
+  const catButtons = document.querySelectorAll('#writeModal .grid.grid-cols-3 button');
+  catButtons.forEach(btn => {
+    btn.addEventListener('click', () => {
+      catButtons.forEach(b => {
+        b.className = 'py-2 px-2.5 rounded-lg border border-outline-variant/30 bg-surface-container text-on-surface-variant font-label-sm text-label-sm font-medium text-center hover:text-on-surface';
+      });
+      btn.className = 'py-2 px-2.5 rounded-lg border border-primary/40 bg-primary/10 text-primary font-label-sm text-label-sm font-medium text-center';
+      selectedCategory = btn.textContent.trim();
+    });
+  });
+
+  function renderSavedPosts() {
+    const feed = document.getElementById('fellowshipFeed');
+    if (!feed) return;
+    document.querySelectorAll('.custom-user-post').forEach(e => e.remove());
+    const posts = JSON.parse(localStorage.getItem(STORAGE_KEYS.FELLOWSHIP_POSTS) || '[]');
+    posts.forEach(post => {
+      const card = document.createElement('div');
+      card.className = 'custom-user-post rounded-xl bg-surface-container-low p-3.5 flex flex-col gap-2 border border-primary/20';
+      card.innerHTML = `
+        <div class="flex items-center justify-between">
+          <div class="flex items-center gap-1.5">
+            <span class="font-label-sm text-label-sm text-primary font-semibold">${post.author}</span>
+            <span class="text-outline text-xs">•</span>
+            <span class="font-label-sm text-label-sm text-outline">${post.time}</span>
+          </div>
+          <span class="font-label-sm text-label-sm px-1.5 py-0.5 rounded bg-surface-container text-primary">${post.category}</span>
+        </div>
+        <p class="font-body-sm text-body-sm text-on-surface leading-relaxed">“${post.content}”</p>
+        <div class="flex items-center justify-between pt-1">
+          <span class="font-label-sm text-label-sm text-on-surface-variant flex items-center gap-1.5">나의 고백 기록</span>
+          <button class="prayer-like-btn flex items-center gap-1.5 px-2.5 py-1 rounded-md bg-surface-container text-on-surface-variant text-label-sm font-label-sm hover:text-primary transition-colors" onclick="togglePrayerLike(this)">
+            <span class="count">1</span>명이 함께 기도함
+          </button>
+        </div>
+      `;
+      feed.prepend(card);
+    });
+  }
+
+  window.submitWriteModal = function() {
+    const input = document.getElementById('write-content-input');
+    if (input && input.value.trim()) {
+      const posts = JSON.parse(localStorage.getItem(STORAGE_KEYS.FELLOWSHIP_POSTS) || '[]');
+      const nick = localStorage.getItem(STORAGE_KEYS.NICKNAME) || '은혜';
+      posts.push({
+        author: `${nick} 성도`,
+        time: '방금 전',
+        category: selectedCategory,
+        content: input.value.trim()
+      });
+      localStorage.setItem(STORAGE_KEYS.FELLOWSHIP_POSTS, JSON.stringify(posts));
+      renderSavedPosts();
+      showToast('동행자 나눔터에 은혜로운 간증이 등록되었습니다.');
+      input.value = '';
+      closeWriteModal();
+    } else {
+      showToast('나눔 내용을 작성해 주세요.');
+    }
+  };
+
+  document.addEventListener('DOMContentLoaded', () => {
+    loadIdentity();
+    initHabits();
+    renderSavedPosts();
+    updateAllTelemetry();
+    setInterval(updateAllTelemetry, 1000);
+  });
+})();
+</script>
+
+</body></html>
